@@ -20,32 +20,57 @@ They're designed to compose. `package-standards` is the base; `stats-standards` 
 
 ## Layout
 
-Each skill is a directory following the Agent Skills format:
+The repo is packaged as a single Claude Code plugin (`ropensci-skills`) that bundles all seven skills, and doubles as a one-plugin marketplace:
 
 ```
-package-standards/
-├── SKILL.md          # frontmatter (name + when-to-use description) + body
-└── references/       # detailed material loaded on demand
-    ├── description-naming-deps.md
-    ├── documentation.md
-    ├── testing-style-ci.md
-    └── security.md
+ropensci-skills/
+├── .claude-plugin/
+│   ├── marketplace.json   # the marketplace catalog (lists the plugin below)
+│   └── plugin.json        # the plugin manifest
+├── skills/
+│   ├── package-standards/
+│   │   ├── SKILL.md        # frontmatter (name + when-to-use description) + body
+│   │   └── references/     # detailed material loaded on demand
+│   │       ├── description-naming-deps.md
+│   │       ├── documentation.md
+│   │       ├── testing-style-ci.md
+│   │       └── security.md
+│   ├── peer-review-author/
+│   ├── package-review/
+│   ├── stats-standards/
+│   ├── package-release/
+│   ├── package-maintenance/
+│   └── blog-post/
+└── eval-workspace/         # the validation harness (not shipped with the plugin)
 ```
 
-`SKILL.md` carries the lightweight guidance that's always loaded once the skill triggers; the `references/` files hold the deeper detail the agent reads only when a task calls for it.
+Each skill follows the Agent Skills format: `SKILL.md` carries the lightweight guidance that's always loaded once the skill triggers, while the `references/` files hold the deeper detail the agent reads only when a task calls for it.
 
-## Using the skills
+## Installing the skills
 
-With [Claude Code](https://docs.claude.com/en/docs/claude-code), copy (or symlink) the skill directories into your skills folder:
+### As a Claude Code plugin (recommended)
+
+In [Claude Code](https://docs.claude.com/en/docs/claude-code), add this repo as a marketplace and install the plugin:
+
+```text
+/plugin marketplace add drmowinckels/ropensci-skills
+/plugin install ropensci-skills@ropensci-skills
+```
+
+That installs all seven skills at once. `/plugin marketplace update` pulls in newer versions later, and `/plugin` opens the manager UI to enable, disable, or uninstall.
+
+### By copying the skill directories
+
+Without the plugin system, copy (or symlink) the skill directories into your skills folder:
 
 ```bash
 # user-level, available in every project
-cp -r package-standards peer-review-author package-review \
-      stats-standards package-release package-maintenance blog-post \
-      ~/.claude/skills/
+cp -r skills/* ~/.claude/skills/
 ```
 
-The skills then trigger automatically when your request matches their description — e.g. "is this package ready to submit to rOpenSci?" loads `peer-review-author`, "deprecate this function" loads `package-maintenance`.
+### Triggering
+
+However you install them, the skills trigger automatically when your request matches their description — e.g. "is this package ready to submit to rOpenSci?" loads `peer-review-author`, "deprecate this function" loads `package-maintenance`. Installed via the plugin, they're namespaced (`ropensci-skills:peer-review-author`) and can also be invoked explicitly.
 
 ## How these were validated
 

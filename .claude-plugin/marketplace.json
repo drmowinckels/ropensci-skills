@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "ropensci-skills",
+  "description": "Agent Skills that help R developers follow rOpenSci's guides and books — package standards, peer review, release, maintenance, and blogging.",
+  "version": "1.0.0",
+  "owner": {
+    "name": "Athanasia Monika Mowinckel",
+    "email": "a.m.mowinckel@psykologi.uio.no"
+  },
+  "plugins": [
+    {
+      "name": "ropensci-skills",
+      "source": "./",
+      "description": "Seven composing skills for rOpenSci-compliant R package development: package-standards, peer-review-author, package-review, stats-standards, package-release, package-maintenance, and blog-post."
+    }
+  ]
+}
