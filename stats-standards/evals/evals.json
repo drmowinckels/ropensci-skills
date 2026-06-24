@@ -1,0 +1,17 @@
+{
+  "skill_name": "stats-standards",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I've built an R package that implements a new Bayesian regression method, and I want to submit it to rOpenSci. What do I need to do beyond the normal package requirements to meet the statistical software standards?",
+      "expected_output": "Apply general package standards first; statistical review is an extension; comply with General Standards plus category standards (Bayesian BS and Regression RE here); use srr to document standards in code (srr_stats_roxygen scaffolds @srrstatsTODO; convert to @srrstats or @srrstatsNA); generate srr_report() and srr_stats_pre_submit(); run autotest; editor verifies via @ropensci-review-bot check srr; graded badges.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "How do I document the rOpenSci statistical standards in my package's code using the srr package? Show me how the tags work.",
+      "expected_output": "srr::srr_stats_roxygen(category=...) scaffolds R/srr-stats-standards.R with @srrstatsTODO tags; convert each to @srrstats {CODE} with description of how met, or @srrstatsNA {CODE} with reason not applicable; roclet runs on devtools::document(); srr_report() for HTML coverage; srr_stats_pre_submit() completeness gate; example tag syntax shown.",
+      "files": []
+    }
+  ]
+}

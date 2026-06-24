@@ -1,0 +1,41 @@
+{
+  "expectations": [
+    {
+      "text": "Says NEWS.md in package root (preferred/mandatory)",
+      "passed": true,
+      "evidence": "NEWS.md"
+    },
+    {
+      "text": "Shows a dated version header",
+      "passed": true,
+      "evidence": "Version header"
+    },
+    {
+      "text": "Groups items under NEW FEATURES / BUG FIXES / etc.",
+      "passed": true,
+      "evidence": "NEW FEATURES"
+    },
+    {
+      "text": "Mentions DEPRECATED AND DEFUNCT grouping",
+      "passed": true,
+      "evidence": "DEPRECATED AND DEFUNCT"
+    },
+    {
+      "text": "Links related GitHub issues like (#12)",
+      "passed": true,
+      "evidence": "(#12)"
+    },
+    {
+      "text": "References the tidyverse NEWS style",
+      "passed": true,
+      "evidence": "tidyverse"
+    },
+    {
+      "text": "Says update before every CRAN release",
+      "passed": true,
+      "evidence": "Each release"
+    }
+  ],
+  "passed_count": 7,
+  "total": 7
+}

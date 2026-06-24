@@ -1,0 +1,16 @@
+{
+  "eval_id": 4,
+  "eval_name": "review-reviewer-checklist",
+  "skill": "package-review",
+  "prompt": "I just agreed to review a package for rOpenSci. It's a package for accessing and tidying climate data from a public API. How should I go about doing the review, and what's the checklist I need to fill out?",
+  "assertions": [
+    "Mentions checking for conflict of interest",
+    "States the 3-week review timeframe",
+    "Includes Documentation checklist (statement of need)",
+    "Includes Functionality checklist (packaging guidelines/tests)",
+    "Recommends hands-on checks (devtools::check/test, install)",
+    "Mentions respectful / non-adversarial conduct (CoC)",
+    "Mentions the reviewer 'rev' role / being credited",
+    "Mentions the pkgreviewr helper"
+  ]
+}

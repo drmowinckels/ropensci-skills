@@ -1,0 +1,16 @@
+{
+  "eval_id": 1,
+  "eval_name": "pkgstd-audit-description",
+  "skill": "package-standards",
+  "prompt": "Here's the DESCRIPTION of my package 'WeatherTools'. Can you review it against rOpenSci packaging standards and tell me what to fix? [DESCRIPTION with Depends: dplyr, RCurl, rjson; Author: Jane Doe (no Authors@R); Title: Tools for Weather Data in R; Description starts 'This package'; License: What license is it?]",
+  "assertions": [
+    "Flags package name should be lowercase",
+    "Flags Title should drop 'in R' / be Title Case",
+    "Flags missing Authors@R / ORCID",
+    "Flags Description starting with 'This package'",
+    "Flags Depends should be Imports",
+    "Flags RCurl/rjson as discouraged (httr2/curl/jsonlite)",
+    "Flags missing/invalid license (CRAN/OSI)",
+    "Flags missing URL / BugReports fields"
+  ]
+}

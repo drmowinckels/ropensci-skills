@@ -1,0 +1,46 @@
+{
+  "expectations": [
+    {
+      "text": "Author metadata at content/author/.../_index.md",
+      "passed": true,
+      "evidence": "Author Metadata"
+    },
+    {
+      "text": "Post YAML needs slug/title/date/author fields",
+      "passed": true,
+      "evidence": "Frontmatter"
+    },
+    {
+      "text": "Title should be Title Case",
+      "passed": true,
+      "evidence": "Title Case"
+    },
+    {
+      "text": "Reuse existing tags (e.g. packages not package)",
+      "passed": true,
+      "evidence": "tags"
+    },
+    {
+      "text": "Mentions the ~100-character description",
+      "passed": true,
+      "evidence": "description"
+    },
+    {
+      "text": "Mentions socialImg / socialAlt / social fields",
+      "passed": true,
+      "evidence": "socialImg"
+    },
+    {
+      "text": "Remove the categories field the addin adds",
+      "passed": true,
+      "evidence": "categories"
+    },
+    {
+      "text": "package_version / Software Peer Review tags for reviewed pkg",
+      "passed": true,
+      "evidence": "package_version"
+    }
+  ],
+  "passed_count": 8,
+  "total": 8
+}

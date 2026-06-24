@@ -1,0 +1,46 @@
+{
+  "expectations": [
+    {
+      "text": "Mentions checking for conflict of interest",
+      "passed": true,
+      "evidence": "conflict"
+    },
+    {
+      "text": "States the 3-week review timeframe",
+      "passed": true,
+      "evidence": "3 week"
+    },
+    {
+      "text": "Includes Documentation checklist (statement of need)",
+      "passed": true,
+      "evidence": "statement of need"
+    },
+    {
+      "text": "Includes Functionality checklist (packaging guidelines/tests)",
+      "passed": true,
+      "evidence": "functionality"
+    },
+    {
+      "text": "Recommends hands-on checks (devtools::check/test, install)",
+      "passed": true,
+      "evidence": "install"
+    },
+    {
+      "text": "Mentions respectful / non-adversarial conduct (CoC)",
+      "passed": true,
+      "evidence": "respectful"
+    },
+    {
+      "text": "Mentions the reviewer 'rev' role / being credited",
+      "passed": true,
+      "evidence": "acknowledg"
+    },
+    {
+      "text": "Mentions the pkgreviewr helper",
+      "passed": true,
+      "evidence": "pkgreviewr"
+    }
+  ],
+  "passed_count": 8,
+  "total": 8
+}

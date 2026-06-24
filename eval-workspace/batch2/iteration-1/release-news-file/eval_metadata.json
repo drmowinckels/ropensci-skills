@@ -1,0 +1,15 @@
+{
+  "eval_id": 4,
+  "eval_name": "Release: NEWS.md structure",
+  "skill": "package-release",
+  "prompt": "How should I write and structure the NEWS.md file for my R package release?",
+  "assertions": [
+    "Says NEWS.md in package root (preferred/mandatory)",
+    "Shows a dated version header",
+    "Groups items under NEW FEATURES / BUG FIXES / etc.",
+    "Mentions DEPRECATED AND DEFUNCT grouping",
+    "Links related GitHub issues like (#12)",
+    "References the tidyverse NEWS style",
+    "Says update before every CRAN release"
+  ]
+}

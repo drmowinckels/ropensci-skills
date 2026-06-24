@@ -1,0 +1,18 @@
+{
+  "eval_id": 0,
+  "eval_name": "pkgstd-new-package",
+  "skill": "package-standards",
+  "prompt": "I'm starting a new R package called finchdata that downloads bird observation data from an online API. I want it to meet rOpenSci's standards from the very beginning. Walk me through how to set it up: structure, files, naming, dependencies, docs, tests, and CI. What conventions do I need to follow?",
+  "assertions": [
+    "Recommends usethis to scaffold the package",
+    "Recommends snake_case for function naming",
+    "Says use Imports rather than Depends",
+    "Recommends modern HTTP/JSON deps (httr2/curl/jsonlite)",
+    "States the ~75% test coverage expectation",
+    "Specifies CI across release, oldrel and devel R",
+    "Mentions the rOpenSci repostatus README badge",
+    "Covers API-key security (env var / keyring / not printed)",
+    "Recommends at least one vignette",
+    "Recommends roxygen2 for documentation"
+  ]
+}

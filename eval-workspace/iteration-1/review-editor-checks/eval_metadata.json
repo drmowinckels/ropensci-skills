@@ -1,0 +1,16 @@
+{
+  "eval_id": 5,
+  "eval_name": "review-editor-checks",
+  "skill": "package-review",
+  "prompt": "I'm the handling editor for a new rOpenSci submission. What initial editor checks do I do before assigning reviewers?",
+  "assertions": [
+    "Notes docs should be assessable without installing",
+    "Mentions fit / overlap check",
+    "Mentions CRAN/OSI license check",
+    "Mentions checking issue/PR tracker health",
+    "Mentions assigning exactly two reviewers",
+    "Mentions the bot runs pkgcheck",
+    "Mentions the 21-day / 3-week reviewer default",
+    "Mentions check srr for statistical packages"
+  ]
+}

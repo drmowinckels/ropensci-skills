@@ -1,0 +1,46 @@
+{
+  "expectations": [
+    {
+      "text": "Notes docs should be assessable without installing",
+      "passed": true,
+      "evidence": "assessment of functionality and\n      scope without installing the package. In particular,\n  - [ ] Is the case for the package well made?\n  - [ ] Is the referen"
+    },
+    {
+      "text": "Mentions fit / overlap check",
+      "passed": true,
+      "evidence": "overlap"
+    },
+    {
+      "text": "Mentions CRAN/OSI license check",
+      "passed": true,
+      "evidence": "CRAN or OSI"
+    },
+    {
+      "text": "Mentions checking issue/PR tracker health",
+      "passed": true,
+      "evidence": "issue.\n\n- **Red \u274c failures** must be fixed by the author before you proceed.\n- **Eyes \ud83d\udc40 items** need attention or clarification from the author before you move "
+    },
+    {
+      "text": "Mentions assigning exactly two reviewers",
+      "passed": false,
+      "evidence": ""
+    },
+    {
+      "text": "Mentions the bot runs pkgcheck",
+      "passed": true,
+      "evidence": "pkgcheck"
+    },
+    {
+      "text": "Mentions the 21-day / 3-week reviewer default",
+      "passed": true,
+      "evidence": "21 day"
+    },
+    {
+      "text": "Mentions check srr for statistical packages",
+      "passed": true,
+      "evidence": "srr"
+    }
+  ],
+  "passed_count": 7,
+  "total": 8
+}

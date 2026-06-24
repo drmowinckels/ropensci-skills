@@ -1,0 +1,15 @@
+{
+  "eval_id": 2,
+  "eval_name": "author-scope-readiness",
+  "skill": "peer-review-author",
+  "prompt": "I've written an R package that scrapes and tidies data from government PDF reports so researchers can analyse them. I'd like to submit it to rOpenSci. Is it in scope, and what do I need to do before I submit?",
+  "assertions": [
+    "Addresses whether the package is in scope",
+    "Mentions the overlap / significant-difference policy",
+    "Recommends running pkgcheck before submitting",
+    "Mentions the ~2-year maintenance commitment",
+    "Says submit before CRAN release / software paper",
+    "Notes README must let editor assess without installing",
+    "Mentions a pre-submission enquiry option"
+  ]
+}

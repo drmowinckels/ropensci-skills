@@ -1,0 +1,19 @@
+{
+  "eval_id": 7,
+  "eval_name": "Blog: write & submit a post",
+  "skill": "blog-post",
+  "prompt": "My R package just passed rOpenSci peer review and I'd like to write a blog post about it for the rOpenSci blog. How do I write and submit it?",
+  "assertions": [
+    "Distinguishes blog post vs tech note",
+    "Get go-ahead / date from the Community Manager",
+    "Fork the roweb3 repository",
+    "Post lives in content/blog/YYYY-MM-DD-slug/",
+    "Knit and commit BOTH source and generated index.md",
+    "Never use the .RMarkdown format",
+    "Put each sentence on its own line",
+    "Use relative URLs for rOpenSci links",
+    "Every image needs alt text",
+    "Link the software-review review thread",
+    "Run roblog checks (ro_lint_md / ro_check_urls)"
+  ]
+}

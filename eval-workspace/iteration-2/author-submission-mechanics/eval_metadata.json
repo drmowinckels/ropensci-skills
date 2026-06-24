@@ -1,0 +1,15 @@
+{
+  "eval_id": 3,
+  "eval_name": "author-submission-mechanics",
+  "skill": "peer-review-author",
+  "prompt": "How do I actually submit my package to rOpenSci software peer review? What goes into the submission and how does the review process work after that?",
+  "assertions": [
+    "Says open an issue in ropensci/software-review",
+    "Mentions the submission template",
+    "Mentions @ropensci-review-bot / pkgcheck on submission",
+    "Says two reviewers are assigned",
+    "Mentions the ~3-week review window",
+    "Mentions approval and transfer to the ropensci org",
+    "Notes a statement of need is required"
+  ]
+}

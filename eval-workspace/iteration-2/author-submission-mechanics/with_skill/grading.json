@@ -1,0 +1,41 @@
+{
+  "expectations": [
+    {
+      "text": "Says open an issue in ropensci/software-review",
+      "passed": true,
+      "evidence": "software-review"
+    },
+    {
+      "text": "Mentions the submission template",
+      "passed": true,
+      "evidence": "template"
+    },
+    {
+      "text": "Mentions @ropensci-review-bot / pkgcheck on submission",
+      "passed": true,
+      "evidence": "pkgcheck"
+    },
+    {
+      "text": "Says two reviewers are assigned",
+      "passed": true,
+      "evidence": "Two reviewers"
+    },
+    {
+      "text": "Mentions the ~3-week review window",
+      "passed": true,
+      "evidence": "3 week"
+    },
+    {
+      "text": "Mentions approval and transfer to the ropensci org",
+      "passed": true,
+      "evidence": "transfer"
+    },
+    {
+      "text": "Notes a statement of need is required",
+      "passed": true,
+      "evidence": "statement of need"
+    }
+  ],
+  "passed_count": 7,
+  "total": 7
+}

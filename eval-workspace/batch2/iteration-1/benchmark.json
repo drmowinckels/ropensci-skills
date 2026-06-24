@@ -1,0 +1,1004 @@
+{
+  "metadata": {
+    "skill_name": "rOpenSci skills (batch 2)",
+    "skill_path": "/Users/athanasm/workspace/ropensci/ropensci-skills",
+    "executor_model": "claude-sonnet-4-6",
+    "timestamp": "2026-06-23T19:02:18.650783+00:00",
+    "evals_run": [
+      7,
+      8,
+      5,
+      6,
+      3,
+      4,
+      1,
+      2
+    ],
+    "runs_per_configuration": 1
+  },
+  "runs": [
+    {
+      "eval_id": 7,
+      "eval_name": "Blog: write & submit a post",
+      "skill": "ropensci-blog-post",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 8,
+        "failed": 0,
+        "total": 8,
+        "time_seconds": 45.5,
+        "tokens": 18523,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Distinguishes blog post vs tech note",
+          "passed": true,
+          "evidence": "Tech note"
+        },
+        {
+          "text": "Get go-ahead / date from the Community Manager",
+          "passed": true,
+          "evidence": "Community Manager"
+        },
+        {
+          "text": "Fork the roweb3 repository",
+          "passed": true,
+          "evidence": "roweb3"
+        },
+        {
+          "text": "Post lives in content/blog/YYYY-MM-DD-slug/",
+          "passed": true,
+          "evidence": "content/blog"
+        },
+        {
+          "text": "Commit both the source and the generated index.md",
+          "passed": true,
+          "evidence": "index.Rmd"
+        },
+        {
+          "text": "Every image needs alt text",
+          "passed": true,
+          "evidence": "alternative text"
+        },
+        {
+          "text": "Acknowledge reviewers / link the software-review thread",
+          "passed": true,
+          "evidence": "thank-you to your reviewer"
+        },
+        {
+          "text": "Run roblog checks (ro_lint_md / ro_check_urls)",
+          "passed": true,
+          "evidence": "roblog"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 7,
+      "eval_name": "Blog: write & submit a post",
+      "skill": "ropensci-blog-post",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 8,
+        "failed": 0,
+        "total": 8,
+        "time_seconds": 105.6,
+        "tokens": 23656,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Distinguishes blog post vs tech note",
+          "passed": true,
+          "evidence": "Tech note"
+        },
+        {
+          "text": "Get go-ahead / date from the Community Manager",
+          "passed": true,
+          "evidence": "Community Manager"
+        },
+        {
+          "text": "Fork the roweb3 repository",
+          "passed": true,
+          "evidence": "roweb3"
+        },
+        {
+          "text": "Post lives in content/blog/YYYY-MM-DD-slug/",
+          "passed": true,
+          "evidence": "content/blog"
+        },
+        {
+          "text": "Commit both the source and the generated index.md",
+          "passed": true,
+          "evidence": "index.Rmd"
+        },
+        {
+          "text": "Every image needs alt text",
+          "passed": true,
+          "evidence": "alt text"
+        },
+        {
+          "text": "Acknowledge reviewers / link the software-review thread",
+          "passed": true,
+          "evidence": "Acknowledgement of your reviewer"
+        },
+        {
+          "text": "Run roblog checks (ro_lint_md / ro_check_urls)",
+          "passed": true,
+          "evidence": "roblog"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 8,
+      "eval_name": "Blog: YAML & author metadata",
+      "skill": "ropensci-blog-post",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 8,
+        "failed": 0,
+        "total": 8,
+        "time_seconds": 34.1,
+        "tokens": 19475,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Author metadata at content/author/.../_index.md",
+          "passed": true,
+          "evidence": "Author Metadata"
+        },
+        {
+          "text": "Post YAML needs slug/title/date/author fields",
+          "passed": true,
+          "evidence": "Frontmatter"
+        },
+        {
+          "text": "Title should be Title Case",
+          "passed": true,
+          "evidence": "Title Case"
+        },
+        {
+          "text": "Reuse existing tags (e.g. packages not package)",
+          "passed": true,
+          "evidence": "tags"
+        },
+        {
+          "text": "Mentions the ~100-character description",
+          "passed": true,
+          "evidence": "description"
+        },
+        {
+          "text": "Mentions socialImg / socialAlt / social fields",
+          "passed": true,
+          "evidence": "socialImg"
+        },
+        {
+          "text": "Remove the categories field the addin adds",
+          "passed": true,
+          "evidence": "categories"
+        },
+        {
+          "text": "package_version / Software Peer Review tags for reviewed pkg",
+          "passed": true,
+          "evidence": "package_version"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 8,
+      "eval_name": "Blog: YAML & author metadata",
+      "skill": "ropensci-blog-post",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 8,
+        "failed": 0,
+        "total": 8,
+        "time_seconds": 70.7,
+        "tokens": 21453,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Author metadata at content/author/.../_index.md",
+          "passed": true,
+          "evidence": "Author Metadata"
+        },
+        {
+          "text": "Post YAML needs slug/title/date/author fields",
+          "passed": true,
+          "evidence": "Frontmatter"
+        },
+        {
+          "text": "Title should be Title Case",
+          "passed": true,
+          "evidence": "Title Case"
+        },
+        {
+          "text": "Reuse existing tags (e.g. packages not package)",
+          "passed": true,
+          "evidence": "tags"
+        },
+        {
+          "text": "Mentions the ~100-character description",
+          "passed": true,
+          "evidence": "description"
+        },
+        {
+          "text": "Mentions socialImg / socialAlt / social fields",
+          "passed": true,
+          "evidence": "socialImg"
+        },
+        {
+          "text": "Remove the categories field the addin adds",
+          "passed": true,
+          "evidence": "categories"
+        },
+        {
+          "text": "package_version / Software Peer Review tags for reviewed pkg",
+          "passed": true,
+          "evidence": "package_version"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 5,
+      "eval_name": "Maintenance: deprecate a function",
+      "skill": "ropensci-maintenance",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 6,
+        "failed": 0,
+        "total": 6,
+        "time_seconds": 35.2,
+        "tokens": 18995,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Describes a two-stage deprecate then defunct process",
+          "passed": true,
+          "evidence": "two-stage"
+        },
+        {
+          "text": "Mentions .Deprecated() (warns, still works)",
+          "passed": true,
+          "evidence": ".Deprecated"
+        },
+        {
+          "text": "Mentions .Defunct() (errors)",
+          "passed": true,
+          "evidence": ".Defunct"
+        },
+        {
+          "text": "Mentions pkgname-deprecated / -defunct help pages",
+          "passed": true,
+          "evidence": "-deprecated"
+        },
+        {
+          "text": "Suggests the lifecycle package",
+          "passed": true,
+          "evidence": "lifecycle"
+        },
+        {
+          "text": "Notes deprecated warns while defunct errors",
+          "passed": true,
+          "evidence": "stops working"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 5,
+      "eval_name": "Maintenance: deprecate a function",
+      "skill": "ropensci-maintenance",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.5,
+        "passed": 3,
+        "failed": 3,
+        "total": 6,
+        "time_seconds": 29.6,
+        "tokens": 16126,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Describes a two-stage deprecate then defunct process",
+          "passed": true,
+          "evidence": "deprecate \u2192 warn \u2192 defunct"
+        },
+        {
+          "text": "Mentions .Deprecated() (warns, still works)",
+          "passed": false,
+          "evidence": ""
+        },
+        {
+          "text": "Mentions .Defunct() (errors)",
+          "passed": false,
+          "evidence": ""
+        },
+        {
+          "text": "Mentions pkgname-deprecated / -defunct help pages",
+          "passed": false,
+          "evidence": ""
+        },
+        {
+          "text": "Suggests the lifecycle package",
+          "passed": true,
+          "evidence": "lifecycle"
+        },
+        {
+          "text": "Notes deprecated warns while defunct errors",
+          "passed": true,
+          "evidence": "throws an error"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 6,
+      "eval_name": "Maintenance: maintainer takeover",
+      "skill": "ropensci-maintenance",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 6,
+        "failed": 0,
+        "total": 6,
+        "time_seconds": 48.8,
+        "tokens": 18794,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Set new maintainer aut+cre, former to aut only",
+          "passed": true,
+          "evidence": "role = c(\"aut\", \"cre"
+        },
+        {
+          "text": "Update maintainer name everywhere (CITATION/CONTRIBUTING/man)",
+          "passed": true,
+          "evidence": "everywhere"
+        },
+        {
+          "text": "Old maintainer must email CRAN for an active package",
+          "passed": true,
+          "evidence": "email CRAN"
+        },
+        {
+          "text": "Notes no permission needed if archived/orphaned",
+          "passed": true,
+          "evidence": "orphaned"
+        },
+        {
+          "text": "Mentions rOpenSci newsletter / Call For Contributors",
+          "passed": true,
+          "evidence": "newsletter"
+        },
+        {
+          "text": "Mentions keeping admin access / Slack channel",
+          "passed": true,
+          "evidence": "admin access"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 6,
+      "eval_name": "Maintenance: maintainer takeover",
+      "skill": "ropensci-maintenance",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.8333,
+        "passed": 5,
+        "failed": 1,
+        "total": 6,
+        "time_seconds": 51.3,
+        "tokens": 16726,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Set new maintainer aut+cre, former to aut only",
+          "passed": true,
+          "evidence": "role = c(\"aut\", \"cre"
+        },
+        {
+          "text": "Update maintainer name everywhere (CITATION/CONTRIBUTING/man)",
+          "passed": true,
+          "evidence": "CONTRIBUTING"
+        },
+        {
+          "text": "Old maintainer must email CRAN for an active package",
+          "passed": true,
+          "evidence": "CRAN sends policy email"
+        },
+        {
+          "text": "Notes no permission needed if archived/orphaned",
+          "passed": true,
+          "evidence": "archived"
+        },
+        {
+          "text": "Mentions rOpenSci newsletter / Call For Contributors",
+          "passed": false,
+          "evidence": ""
+        },
+        {
+          "text": "Mentions keeping admin access / Slack channel",
+          "passed": true,
+          "evidence": "package-maintenance"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 3,
+      "eval_name": "Release: CRAN release process",
+      "skill": "ropensci-release",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 8,
+        "failed": 0,
+        "total": 8,
+        "time_seconds": 38.8,
+        "tokens": 17963,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Recommends usethis::use_release_issue()",
+          "passed": true,
+          "evidence": "use_release_issue"
+        },
+        {
+          "text": "Recommends devtools::release()",
+          "passed": true,
+          "evidence": "devtools::release"
+        },
+        {
+          "text": "Mentions semantic versioning",
+          "passed": true,
+          "evidence": "semantic version"
+        },
+        {
+          "text": "Says update NEWS.md",
+          "passed": true,
+          "evidence": "NEWS.md"
+        },
+        {
+          "text": "Says git-tag each CRAN release",
+          "passed": true,
+          "evidence": "Tag the release"
+        },
+        {
+          "text": "Says create a GitHub Release",
+          "passed": true,
+          "evidence": "GitHub release"
+        },
+        {
+          "text": "Says announce via R Weekly",
+          "passed": true,
+          "evidence": "R Weekly"
+        },
+        {
+          "text": "Mentions CRAN Task View",
+          "passed": true,
+          "evidence": "Task View"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 3,
+      "eval_name": "Release: CRAN release process",
+      "skill": "ropensci-release",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.5,
+        "passed": 4,
+        "failed": 4,
+        "total": 8,
+        "time_seconds": 43.3,
+        "tokens": 16390,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Recommends usethis::use_release_issue()",
+          "passed": true,
+          "evidence": "use_release_issue"
+        },
+        {
+          "text": "Recommends devtools::release()",
+          "passed": false,
+          "evidence": ""
+        },
+        {
+          "text": "Mentions semantic versioning",
+          "passed": false,
+          "evidence": ""
+        },
+        {
+          "text": "Says update NEWS.md",
+          "passed": true,
+          "evidence": "NEWS.md"
+        },
+        {
+          "text": "Says git-tag each CRAN release",
+          "passed": true,
+          "evidence": "Tag the release"
+        },
+        {
+          "text": "Says create a GitHub Release",
+          "passed": true,
+          "evidence": "GitHub Release"
+        },
+        {
+          "text": "Says announce via R Weekly",
+          "passed": false,
+          "evidence": ""
+        },
+        {
+          "text": "Mentions CRAN Task View",
+          "passed": false,
+          "evidence": ""
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 4,
+      "eval_name": "Release: NEWS.md structure",
+      "skill": "ropensci-release",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 7,
+        "failed": 0,
+        "total": 7,
+        "time_seconds": 40.4,
+        "tokens": 17795,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Says NEWS.md in package root (preferred/mandatory)",
+          "passed": true,
+          "evidence": "NEWS.md"
+        },
+        {
+          "text": "Shows a dated version header",
+          "passed": true,
+          "evidence": "Version header"
+        },
+        {
+          "text": "Groups items under NEW FEATURES / BUG FIXES / etc.",
+          "passed": true,
+          "evidence": "NEW FEATURES"
+        },
+        {
+          "text": "Mentions DEPRECATED AND DEFUNCT grouping",
+          "passed": true,
+          "evidence": "DEPRECATED AND DEFUNCT"
+        },
+        {
+          "text": "Links related GitHub issues like (#12)",
+          "passed": true,
+          "evidence": "(#12)"
+        },
+        {
+          "text": "References the tidyverse NEWS style",
+          "passed": true,
+          "evidence": "tidyverse"
+        },
+        {
+          "text": "Says update before every CRAN release",
+          "passed": true,
+          "evidence": "Each release"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 4,
+      "eval_name": "Release: NEWS.md structure",
+      "skill": "ropensci-release",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.7143,
+        "passed": 5,
+        "failed": 2,
+        "total": 7,
+        "time_seconds": 39.1,
+        "tokens": 16493,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Says NEWS.md in package root (preferred/mandatory)",
+          "passed": true,
+          "evidence": "NEWS.md"
+        },
+        {
+          "text": "Shows a dated version header",
+          "passed": false,
+          "evidence": ""
+        },
+        {
+          "text": "Groups items under NEW FEATURES / BUG FIXES / etc.",
+          "passed": true,
+          "evidence": "New features"
+        },
+        {
+          "text": "Mentions DEPRECATED AND DEFUNCT grouping",
+          "passed": true,
+          "evidence": "deprecated"
+        },
+        {
+          "text": "Links related GitHub issues like (#12)",
+          "passed": true,
+          "evidence": "(#123)"
+        },
+        {
+          "text": "References the tidyverse NEWS style",
+          "passed": false,
+          "evidence": ""
+        },
+        {
+          "text": "Says update before every CRAN release",
+          "passed": true,
+          "evidence": "every release"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 1,
+      "eval_name": "Stats: Bayesian pkg submission",
+      "skill": "ropensci-stats-standards",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 8,
+        "failed": 0,
+        "total": 8,
+        "time_seconds": 66.4,
+        "tokens": 21344,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Says statistical review extends the general package standards",
+          "passed": true,
+          "evidence": "extension"
+        },
+        {
+          "text": "Identifies Bayesian (BS) and/or Regression (RE) standard categories",
+          "passed": true,
+          "evidence": "Bayesian Regression Package to rOpenSci Statistical Software Review\n\nThe rOpenSci statistical software review is a **direct extension** of the general rOpenSci "
+        },
+        {
+          "text": "Uses the srr package to document standards",
+          "passed": true,
+          "evidence": "srr"
+        },
+        {
+          "text": "Mentions @srrstats / @srrstatsTODO / @srrstatsNA tags",
+          "passed": true,
+          "evidence": "@srrstatsTODO"
+        },
+        {
+          "text": "Mentions srr_report() / srr_stats_pre_submit()",
+          "passed": true,
+          "evidence": "srr_report"
+        },
+        {
+          "text": "Recommends running autotest",
+          "passed": true,
+          "evidence": "autotest"
+        },
+        {
+          "text": "Editor verifies via @ropensci-review-bot check srr",
+          "passed": true,
+          "evidence": "review-bot check srr"
+        },
+        {
+          "text": "Mentions graded badges for statistical packages",
+          "passed": true,
+          "evidence": "Graded badge"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 1,
+      "eval_name": "Stats: Bayesian pkg submission",
+      "skill": "ropensci-stats-standards",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 8,
+        "failed": 0,
+        "total": 8,
+        "time_seconds": 215.2,
+        "tokens": 32569,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Says statistical review extends the general package standards",
+          "passed": true,
+          "evidence": "extends"
+        },
+        {
+          "text": "Identifies Bayesian (BS) and/or Regression (RE) standard categories",
+          "passed": true,
+          "evidence": "Bayesian Regression Package to rOpenSci Statistical Software Review\n\nSubmitting to rOpenSci's statistical software review track is meaningfully different from g"
+        },
+        {
+          "text": "Uses the srr package to document standards",
+          "passed": true,
+          "evidence": "srr"
+        },
+        {
+          "text": "Mentions @srrstats / @srrstatsTODO / @srrstatsNA tags",
+          "passed": true,
+          "evidence": "@srrstatsTODO"
+        },
+        {
+          "text": "Mentions srr_report() / srr_stats_pre_submit()",
+          "passed": true,
+          "evidence": "srr_stats_pre_submit"
+        },
+        {
+          "text": "Recommends running autotest",
+          "passed": true,
+          "evidence": "autotest"
+        },
+        {
+          "text": "Editor verifies via @ropensci-review-bot check srr",
+          "passed": true,
+          "evidence": "review-bot check srr"
+        },
+        {
+          "text": "Mentions graded badges for statistical packages",
+          "passed": true,
+          "evidence": "Badge Grade"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 2,
+      "eval_name": "Stats: documenting srr tags",
+      "skill": "ropensci-stats-standards",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 7,
+        "failed": 0,
+        "total": 7,
+        "time_seconds": 58.2,
+        "tokens": 19555,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Mentions srr_stats_roxygen() scaffolding the standards file",
+          "passed": true,
+          "evidence": "srr_stats_roclet"
+        },
+        {
+          "text": "Mentions @srrstatsTODO placeholder tags",
+          "passed": true,
+          "evidence": "srrstatsTODO"
+        },
+        {
+          "text": "Shows the @srrstats satisfied tag",
+          "passed": true,
+          "evidence": "@srrstats"
+        },
+        {
+          "text": "Shows the @srrstatsNA not-applicable tag",
+          "passed": true,
+          "evidence": "srrstatsNA"
+        },
+        {
+          "text": "Notes the roclet runs on devtools::document() / roxygenise",
+          "passed": true,
+          "evidence": "roclet"
+        },
+        {
+          "text": "Mentions srr_report() coverage report",
+          "passed": true,
+          "evidence": "srr_report"
+        },
+        {
+          "text": "Mentions srr_stats_pre_submit() completeness gate",
+          "passed": true,
+          "evidence": "srr_stats_pre_submit"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 2,
+      "eval_name": "Stats: documenting srr tags",
+      "skill": "ropensci-stats-standards",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.8571,
+        "passed": 6,
+        "failed": 1,
+        "total": 7,
+        "time_seconds": 165.5,
+        "tokens": 27456,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Mentions srr_stats_roxygen() scaffolding the standards file",
+          "passed": true,
+          "evidence": "srr_stats_roclet"
+        },
+        {
+          "text": "Mentions @srrstatsTODO placeholder tags",
+          "passed": true,
+          "evidence": "srrstatsTODO"
+        },
+        {
+          "text": "Shows the @srrstats satisfied tag",
+          "passed": true,
+          "evidence": "@srrstats"
+        },
+        {
+          "text": "Shows the @srrstatsNA not-applicable tag",
+          "passed": true,
+          "evidence": "srrstatsNA"
+        },
+        {
+          "text": "Notes the roclet runs on devtools::document() / roxygenise",
+          "passed": true,
+          "evidence": "Roclet"
+        },
+        {
+          "text": "Mentions srr_report() coverage report",
+          "passed": false,
+          "evidence": ""
+        },
+        {
+          "text": "Mentions srr_stats_pre_submit() completeness gate",
+          "passed": true,
+          "evidence": "srr_stats_pre_submit"
+        }
+      ],
+      "notes": []
+    }
+  ],
+  "run_summary": {
+    "with_skill": {
+      "pass_rate": {
+        "mean": 1.0,
+        "stddev": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "time_seconds": {
+        "mean": 45.925,
+        "stddev": 11.4299,
+        "min": 34.1,
+        "max": 66.4
+      },
+      "tokens": {
+        "mean": 19055.5,
+        "stddev": 1121.2702,
+        "min": 17795,
+        "max": 21344
+      }
+    },
+    "without_skill": {
+      "pass_rate": {
+        "mean": 0.8006,
+        "stddev": 0.211,
+        "min": 0.5,
+        "max": 1.0
+      },
+      "time_seconds": {
+        "mean": 90.0375,
+        "stddev": 67.5158,
+        "min": 29.6,
+        "max": 215.2
+      },
+      "tokens": {
+        "mean": 21358.625,
+        "stddev": 6156.7669,
+        "min": 16126,
+        "max": 32569
+      }
+    },
+    "delta": {
+      "pass_rate": "+0.20",
+      "time_seconds": "-44.1",
+      "tokens": "-2303"
+    }
+  },
+  "notes": [
+    "Assertion 'Distinguishes blog post vs tech note' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Get go-ahead / date from the Community Manager' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Fork the roweb3 repository' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Post lives in content/blog/YYYY-MM-DD-slug/' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Commit both the source and the generated index.md' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Every image needs alt text' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Acknowledge reviewers / link the software-review thread' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Run roblog checks (ro_lint_md / ro_check_urls)' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Author metadata at content/author/.../_index.md' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Post YAML needs slug/title/date/author fields' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Title should be Title Case' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Reuse existing tags (e.g. packages not package)' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Mentions the ~100-character description' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Mentions socialImg / socialAlt / social fields' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Remove the categories field the addin adds' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'package_version / Software Peer Review tags for reviewed pkg' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Describes a two-stage deprecate then defunct process' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Suggests the lifecycle package' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Notes deprecated warns while defunct errors' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Set new maintainer aut+cre, former to aut only' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Update maintainer name everywhere (CITATION/CONTRIBUTING/man)' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Old maintainer must email CRAN for an active package' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Notes no permission needed if archived/orphaned' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Mentions keeping admin access / Slack channel' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Recommends usethis::use_release_issue()' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Says update NEWS.md' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Says git-tag each CRAN release' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Says create a GitHub Release' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Says NEWS.md in package root (preferred/mandatory)' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Groups items under NEW FEATURES / BUG FIXES / etc.' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Mentions DEPRECATED AND DEFUNCT grouping' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Links related GitHub issues like (#12)' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Says update before every CRAN release' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Says statistical review extends the general package standards' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Identifies Bayesian (BS) and/or Regression (RE) standard categories' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Uses the srr package to document standards' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Mentions @srrstats / @srrstatsTODO / @srrstatsNA tags' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Mentions srr_report() / srr_stats_pre_submit()' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Recommends running autotest' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Editor verifies via @ropensci-review-bot check srr' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Mentions graded badges for statistical packages' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Mentions srr_stats_roxygen() scaffolding the standards file' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Mentions @srrstatsTODO placeholder tags' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Shows the @srrstats satisfied tag' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Shows the @srrstatsNA not-applicable tag' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Notes the roclet runs on devtools::document() / roxygenise' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Mentions srr_stats_pre_submit() completeness gate' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Skill lifts pass rate by +20% on average (with=100%, without=80%); biggest single-eval gap is 'Maintenance: deprecate a function' (+50%).",
+    "47 assertion(s) pass in BOTH configs - to the extent these match generic packaging vocabulary the benchmark understates the skill's rOpenSci-specific value.",
+    "Skill saves 2303 tokens vs baseline on average and runs 44s faster; baseline time/tokens vary run-to-run because without the skill the model explores/searches, while with it the model answers from grounded references."
+  ]
+}

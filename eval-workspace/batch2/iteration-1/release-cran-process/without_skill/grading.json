@@ -1,0 +1,46 @@
+{
+  "expectations": [
+    {
+      "text": "Recommends usethis::use_release_issue()",
+      "passed": true,
+      "evidence": "use_release_issue"
+    },
+    {
+      "text": "Recommends devtools::release()",
+      "passed": false,
+      "evidence": ""
+    },
+    {
+      "text": "Mentions semantic versioning",
+      "passed": false,
+      "evidence": ""
+    },
+    {
+      "text": "Says update NEWS.md",
+      "passed": true,
+      "evidence": "NEWS.md"
+    },
+    {
+      "text": "Says git-tag each CRAN release",
+      "passed": true,
+      "evidence": "Tag the release"
+    },
+    {
+      "text": "Says create a GitHub Release",
+      "passed": true,
+      "evidence": "GitHub Release"
+    },
+    {
+      "text": "Says announce via R Weekly",
+      "passed": false,
+      "evidence": ""
+    },
+    {
+      "text": "Mentions CRAN Task View",
+      "passed": false,
+      "evidence": ""
+    }
+  ],
+  "passed_count": 4,
+  "total": 8
+}

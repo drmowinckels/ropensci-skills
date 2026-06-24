@@ -1,0 +1,17 @@
+{
+  "skill_name": "package-release",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I'm about to release version 0.3.0 of my rOpenSci package to CRAN. What's the process I should follow, and is there anything rOpenSci-specific I should do around the release?",
+      "expected_output": "Use usethis::use_release_issue() and devtools::release() for the CRAN checklist; semantic versioning; update NEWS.md (mandatory) with dated version header and grouped issue-linked items; git tag each CRAN release; create GitHub Release titled 'pkgname vX.Y.Z' with NEWS notes; announce via R Weekly PR, optional tech note, CRAN Task View; newsletter writeup.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "How should I write and structure the NEWS.md file for my R package release?",
+      "expected_output": "NEWS.md mandatory in root (preferred over NEWS); one dated header per version (pkgname 0.2.0 (YYYY-MM-DD)); group items under NEW FEATURES, MINOR IMPROVEMENTS, BUG FIXES, DEPRECATED AND DEFUNCT, DOCUMENTATION FIXES; each item links related GitHub issue like (#12); follow tidyverse NEWS style; update before every CRAN release.",
+      "files": []
+    }
+  ]
+}

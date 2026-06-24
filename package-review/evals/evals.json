@@ -1,0 +1,17 @@
+{
+  "skill_name": "package-review",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I just agreed to review a package for rOpenSci. It's a package for accessing and tidying climate data from a public API. How should I go about doing the review, and what's the checklist I need to fill out?",
+      "expected_output": "Confirm no conflict of interest; aim to finish within 3 weeks; hands-on checks (devtools::check/test locally, install as documented, run vignettes/examples, try on own data, read pkgcheck report and CI logs); the reviewer template grouped into Documentation (statement of need, install, vignettes, function docs, examples, community guidelines) and Functionality (installation, functional/performance claims, automated tests, packaging guidelines), hours spent, rev role; respectful/non-adversarial conduct; mentions pkgreviewr.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "I'm the handling editor for a new rOpenSci submission. What initial editor checks do I do before assigning reviewers?",
+      "expected_output": "Editor checks: docs sufficient to assess without installing (case made, clear reference index, non-perfunctory vignettes), fit/overlap, install instructions, state-of-the-art test tooling for interactivity/HTTP/plots, contributing info, CRAN/OSI license, healthy issue/PR trackers; bot runs pkgcheck (fix failures); assign exactly two reviewers avoiding recent reviewers, 21-day default; for stats packages run @ropensci-review-bot check srr.",
+      "files": []
+    }
+  ]
+}

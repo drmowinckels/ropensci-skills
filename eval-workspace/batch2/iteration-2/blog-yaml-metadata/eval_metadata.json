@@ -1,0 +1,16 @@
+{
+  "eval_id": 8,
+  "eval_name": "Blog: YAML & author metadata",
+  "skill": "blog-post",
+  "prompt": "What YAML frontmatter and author metadata do I need to set up for an rOpenSci blog post?",
+  "assertions": [
+    "Author metadata at content/author/ (singular) /_index.md",
+    "Post YAML needs a slug field",
+    "Title should be Title Case",
+    "Reuse existing tags rather than invent new ones",
+    "Mentions the ~100-character description",
+    "Mentions socialImg / socialAlt fields",
+    "Remove the categories field the addin adds",
+    "package_version / Software Peer Review tags for reviewed pkg"
+  ]
+}

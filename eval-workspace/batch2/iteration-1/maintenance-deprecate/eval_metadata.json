@@ -1,0 +1,14 @@
+{
+  "eval_id": 5,
+  "eval_name": "Maintenance: deprecate a function",
+  "skill": "package-maintenance",
+  "prompt": "I need to deprecate a function in my rOpenSci package and eventually remove it, without breaking my users. What's the recommended way to do this?",
+  "assertions": [
+    "Describes a two-stage deprecate then defunct process",
+    "Mentions .Deprecated() (warns, still works)",
+    "Mentions .Defunct() (errors)",
+    "Mentions pkgname-deprecated / -defunct help pages",
+    "Suggests the lifecycle package",
+    "Notes deprecated warns while defunct errors"
+  ]
+}

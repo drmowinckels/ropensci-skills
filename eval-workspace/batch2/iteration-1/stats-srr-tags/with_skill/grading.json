@@ -1,0 +1,41 @@
+{
+  "expectations": [
+    {
+      "text": "Mentions srr_stats_roxygen() scaffolding the standards file",
+      "passed": true,
+      "evidence": "srr_stats_roclet"
+    },
+    {
+      "text": "Mentions @srrstatsTODO placeholder tags",
+      "passed": true,
+      "evidence": "srrstatsTODO"
+    },
+    {
+      "text": "Shows the @srrstats satisfied tag",
+      "passed": true,
+      "evidence": "@srrstats"
+    },
+    {
+      "text": "Shows the @srrstatsNA not-applicable tag",
+      "passed": true,
+      "evidence": "srrstatsNA"
+    },
+    {
+      "text": "Notes the roclet runs on devtools::document() / roxygenise",
+      "passed": true,
+      "evidence": "roclet"
+    },
+    {
+      "text": "Mentions srr_report() coverage report",
+      "passed": true,
+      "evidence": "srr_report"
+    },
+    {
+      "text": "Mentions srr_stats_pre_submit() completeness gate",
+      "passed": true,
+      "evidence": "srr_stats_pre_submit"
+    }
+  ],
+  "passed_count": 7,
+  "total": 7
+}

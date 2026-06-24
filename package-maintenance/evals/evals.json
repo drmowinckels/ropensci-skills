@@ -1,0 +1,17 @@
+{
+  "skill_name": "package-maintenance",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I need to deprecate a function in my rOpenSci package and eventually remove it, without breaking my users. What's the recommended way to do this?",
+      "expected_output": "Two-stage deprecate -> defunct: first release mark .Deprecated('new') (warning, still runs) + pkgname-deprecated man page; next release .Defunct('new') (error) + add ... to absorb args + pkgname-defunct man page kept indefinitely; lifecycle package optional; don't change deprecated tests until defunct, then remove them; mentions argument/function rename patterns.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "I'm taking over maintenance of an rOpenSci package from someone who is stepping down. What do I need to update and be aware of?",
+      "expected_output": "In DESCRIPTION set new maintainer role=c('aut','cre') and make former maintainer 'aut' only; update maintainer name everywhere else (package man page, CONTRIBUTING.md, CITATION); CRAN: if active the old maintainer must email CRAN confirming change (mention in first submission); if archived/orphaned no permission needed; rOpenSci newsletter Call For Contributors; keep admin access / Slack.",
+      "files": []
+    }
+  ]
+}

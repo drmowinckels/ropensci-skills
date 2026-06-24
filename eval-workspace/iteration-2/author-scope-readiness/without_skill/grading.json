@@ -1,0 +1,41 @@
+{
+  "expectations": [
+    {
+      "text": "Addresses whether the package is in scope",
+      "passed": true,
+      "evidence": "in scope"
+    },
+    {
+      "text": "Mentions the overlap / significant-difference policy",
+      "passed": false,
+      "evidence": ""
+    },
+    {
+      "text": "Recommends running pkgcheck before submitting",
+      "passed": true,
+      "evidence": "pkgcheck"
+    },
+    {
+      "text": "Mentions the ~2-year maintenance commitment",
+      "passed": true,
+      "evidence": "two year"
+    },
+    {
+      "text": "Says submit before CRAN release / software paper",
+      "passed": true,
+      "evidence": "before submitting?\n\n## Is it in scope?\n\nAlmost certainly yes. rOpenSci accepts two categories that directly cover what you describe:\n\n**Data extraction** \u2014 pack"
+    },
+    {
+      "text": "Notes README must let editor assess without installing",
+      "passed": false,
+      "evidence": ""
+    },
+    {
+      "text": "Mentions a pre-submission enquiry option",
+      "passed": true,
+      "evidence": "pre-submission"
+    }
+  ],
+  "passed_count": 5,
+  "total": 7
+}

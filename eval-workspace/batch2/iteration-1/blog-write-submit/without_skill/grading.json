@@ -1,0 +1,46 @@
+{
+  "expectations": [
+    {
+      "text": "Distinguishes blog post vs tech note",
+      "passed": true,
+      "evidence": "Tech note"
+    },
+    {
+      "text": "Get go-ahead / date from the Community Manager",
+      "passed": true,
+      "evidence": "Community Manager"
+    },
+    {
+      "text": "Fork the roweb3 repository",
+      "passed": true,
+      "evidence": "roweb3"
+    },
+    {
+      "text": "Post lives in content/blog/YYYY-MM-DD-slug/",
+      "passed": true,
+      "evidence": "content/blog"
+    },
+    {
+      "text": "Commit both the source and the generated index.md",
+      "passed": true,
+      "evidence": "index.Rmd"
+    },
+    {
+      "text": "Every image needs alt text",
+      "passed": true,
+      "evidence": "alt text"
+    },
+    {
+      "text": "Acknowledge reviewers / link the software-review thread",
+      "passed": true,
+      "evidence": "Acknowledgement of your reviewer"
+    },
+    {
+      "text": "Run roblog checks (ro_lint_md / ro_check_urls)",
+      "passed": true,
+      "evidence": "roblog"
+    }
+  ],
+  "passed_count": 8,
+  "total": 8
+}

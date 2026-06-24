@@ -1,0 +1,46 @@
+{
+  "expectations": [
+    {
+      "text": "Says statistical review extends the general package standards",
+      "passed": true,
+      "evidence": "extension"
+    },
+    {
+      "text": "Identifies Bayesian (BS) and/or Regression (RE) standard categories",
+      "passed": true,
+      "evidence": "Bayesian Regression Package to rOpenSci Statistical Software Review\n\nThe rOpenSci statistical software review is a **direct extension** of the general rOpenSci "
+    },
+    {
+      "text": "Uses the srr package to document standards",
+      "passed": true,
+      "evidence": "srr"
+    },
+    {
+      "text": "Mentions @srrstats / @srrstatsTODO / @srrstatsNA tags",
+      "passed": true,
+      "evidence": "@srrstatsTODO"
+    },
+    {
+      "text": "Mentions srr_report() / srr_stats_pre_submit()",
+      "passed": true,
+      "evidence": "srr_report"
+    },
+    {
+      "text": "Recommends running autotest",
+      "passed": true,
+      "evidence": "autotest"
+    },
+    {
+      "text": "Editor verifies via @ropensci-review-bot check srr",
+      "passed": true,
+      "evidence": "review-bot check srr"
+    },
+    {
+      "text": "Mentions graded badges for statistical packages",
+      "passed": true,
+      "evidence": "Graded badge"
+    }
+  ],
+  "passed_count": 8,
+  "total": 8
+}

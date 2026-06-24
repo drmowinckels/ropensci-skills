@@ -1,0 +1,15 @@
+{
+  "eval_id": 2,
+  "eval_name": "Stats: documenting srr tags",
+  "skill": "stats-standards",
+  "prompt": "How do I document the rOpenSci statistical standards in my package's code using the srr package? Show me how the tags work.",
+  "assertions": [
+    "Mentions srr_stats_roxygen() scaffolding the standards file",
+    "Mentions @srrstatsTODO placeholder tags",
+    "Shows the @srrstats satisfied tag",
+    "Shows the @srrstatsNA not-applicable tag",
+    "Notes the roclet runs on devtools::document() / roxygenise",
+    "Mentions srr_report() coverage report",
+    "Mentions srr_stats_pre_submit() completeness gate"
+  ]
+}

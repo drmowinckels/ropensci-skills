@@ -1,0 +1,17 @@
+{
+  "skill_name": "blog-post",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "My R package just passed rOpenSci peer review and I'd like to write a blog post about it for the rOpenSci blog. How do I write and submit it?",
+      "expected_output": "Choose blog post vs tech note; get go-ahead + date from Community Manager; fork roweb3, new branch; post at content/blog/YYYY-MM-DD-slug/ as index.Rmd/qmd/md (commit both source and generated index.md); YAML frontmatter with required fields incl tags (Software Peer Review, community, packages, package name) and package_version; author metadata file; alt text on every image; acknowledge reviewers with links + link the software-review thread; run roblog::ro_lint_md()/ro_check_urls() + spell check; draft PR with checklist, ready >=1 week before publish; respond to review with emoji/resolve/tag editor.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "What YAML frontmatter and author metadata do I need to set up for an rOpenSci blog post?",
+      "expected_output": "Author metadata at content/author/firstname-lastname/_index.md (name + link/social/github fields); post YAML with slug, title (Title Case), author list, date, tags (reuse existing, e.g. packages not package), description (~100 chars), optional socialImg/socialAlt/social; remove the categories field the addin adds; package_version and Software Peer Review tags for peer-reviewed package posts.",
+      "files": []
+    }
+  ]
+}

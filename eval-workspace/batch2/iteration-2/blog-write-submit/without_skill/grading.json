@@ -1,0 +1,61 @@
+{
+  "expectations": [
+    {
+      "text": "Distinguishes blog post vs tech note",
+      "passed": true,
+      "evidence": "tech note"
+    },
+    {
+      "text": "Get go-ahead / date from the Community Manager",
+      "passed": false,
+      "evidence": ""
+    },
+    {
+      "text": "Fork the roweb3 repository",
+      "passed": true,
+      "evidence": "roweb3"
+    },
+    {
+      "text": "Post lives in content/blog/YYYY-MM-DD-slug/",
+      "passed": true,
+      "evidence": "content/blog"
+    },
+    {
+      "text": "Knit and commit BOTH source and generated index.md",
+      "passed": false,
+      "evidence": ""
+    },
+    {
+      "text": "Never use the .RMarkdown format",
+      "passed": false,
+      "evidence": ""
+    },
+    {
+      "text": "Put each sentence on its own line",
+      "passed": false,
+      "evidence": ""
+    },
+    {
+      "text": "Use relative URLs for rOpenSci links",
+      "passed": true,
+      "evidence": "relative URL"
+    },
+    {
+      "text": "Every image needs alt text",
+      "passed": true,
+      "evidence": "alt text"
+    },
+    {
+      "text": "Link the software-review review thread",
+      "passed": true,
+      "evidence": "review thread"
+    },
+    {
+      "text": "Run roblog checks (ro_lint_md / ro_check_urls)",
+      "passed": true,
+      "evidence": "roblog"
+    }
+  ],
+  "passed_count": 7,
+  "total": 11
+}

@@ -1,0 +1,16 @@
+{
+  "eval_id": 3,
+  "eval_name": "Release: CRAN release process",
+  "skill": "package-release",
+  "prompt": "I'm about to release version 0.3.0 of my rOpenSci package to CRAN. What's the process I should follow, and is there anything rOpenSci-specific I should do around the release?",
+  "assertions": [
+    "Recommends usethis::use_release_issue()",
+    "Recommends devtools::release()",
+    "Mentions semantic versioning",
+    "Says update NEWS.md",
+    "Says git-tag each CRAN release",
+    "Says create a GitHub Release",
+    "Says announce via R Weekly",
+    "Mentions CRAN Task View"
+  ]
+}

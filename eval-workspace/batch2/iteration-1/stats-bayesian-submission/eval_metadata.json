@@ -1,0 +1,16 @@
+{
+  "eval_id": 1,
+  "eval_name": "Stats: Bayesian pkg submission",
+  "skill": "stats-standards",
+  "prompt": "I've built an R package that implements a new Bayesian regression method, and I want to submit it to rOpenSci. What do I need to do beyond the normal package requirements to meet the statistical software standards?",
+  "assertions": [
+    "Says statistical review extends the general package standards",
+    "Identifies Bayesian (BS) and/or Regression (RE) standard categories",
+    "Uses the srr package to document standards",
+    "Mentions @srrstats / @srrstatsTODO / @srrstatsNA tags",
+    "Mentions srr_report() / srr_stats_pre_submit()",
+    "Recommends running autotest",
+    "Editor verifies via @ropensci-review-bot check srr",
+    "Mentions graded badges for statistical packages"
+  ]
+}

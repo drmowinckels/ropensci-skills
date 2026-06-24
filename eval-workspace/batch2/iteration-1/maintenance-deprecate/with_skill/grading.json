@@ -1,0 +1,36 @@
+{
+  "expectations": [
+    {
+      "text": "Describes a two-stage deprecate then defunct process",
+      "passed": true,
+      "evidence": "two-stage"
+    },
+    {
+      "text": "Mentions .Deprecated() (warns, still works)",
+      "passed": true,
+      "evidence": ".Deprecated"
+    },
+    {
+      "text": "Mentions .Defunct() (errors)",
+      "passed": true,
+      "evidence": ".Defunct"
+    },
+    {
+      "text": "Mentions pkgname-deprecated / -defunct help pages",
+      "passed": true,
+      "evidence": "-deprecated"
+    },
+    {
+      "text": "Suggests the lifecycle package",
+      "passed": true,
+      "evidence": "lifecycle"
+    },
+    {
+      "text": "Notes deprecated warns while defunct errors",
+      "passed": true,
+      "evidence": "stops working"
+    }
+  ],
+  "passed_count": 6,
+  "total": 6
+}

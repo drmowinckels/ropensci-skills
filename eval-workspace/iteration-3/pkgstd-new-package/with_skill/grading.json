@@ -1,0 +1,56 @@
+{
+  "expectations": [
+    {
+      "text": "Recommends usethis to scaffold the package",
+      "passed": true,
+      "evidence": "usethis"
+    },
+    {
+      "text": "Recommends snake_case for function naming",
+      "passed": true,
+      "evidence": "snake_case"
+    },
+    {
+      "text": "Says use Imports rather than Depends",
+      "passed": true,
+      "evidence": "Imports:\n    httr2,\n    jsonlite\nSuggests:\n    httptest2,\n    knitr,\n    rmarkdown,\n    testthat (>= 3.0.0),\n    vcr (>= 1.2.2)\n```\n\nKey rules applied here:\n\n- "
+    },
+    {
+      "text": "Recommends modern HTTP/JSON deps (httr2/curl/jsonlite)",
+      "passed": true,
+      "evidence": "httr2"
+    },
+    {
+      "text": "States the ~75% test coverage expectation",
+      "passed": true,
+      "evidence": "75%"
+    },
+    {
+      "text": "Specifies CI across release, oldrel and devel R",
+      "passed": true,
+      "evidence": "release, oldrel, and devel R:\nusethis::use_github_action(\"check-standard\")\n\n# Test coverage reported to Codecov:\nusethis::use_github_action(\"test-coverage\")\n```"
+    },
+    {
+      "text": "Mentions the rOpenSci repostatus README badge",
+      "passed": true,
+      "evidence": "repostatus"
+    },
+    {
+      "text": "Covers API-key security (env var / keyring / not printed)",
+      "passed": true,
+      "evidence": "environment variable"
+    },
+    {
+      "text": "Recommends at least one vignette",
+      "passed": true,
+      "evidence": "vignette"
+    },
+    {
+      "text": "Recommends roxygen2 for documentation",
+      "passed": true,
+      "evidence": "Roxygen"
+    }
+  ],
+  "passed_count": 10,
+  "total": 10
+}

@@ -1,0 +1,46 @@
+{
+  "expectations": [
+    {
+      "text": "Flags package name should be lowercase",
+      "passed": false,
+      "evidence": ""
+    },
+    {
+      "text": "Flags Title should drop 'in R' / be Title Case",
+      "passed": false,
+      "evidence": ""
+    },
+    {
+      "text": "Flags missing Authors@R / ORCID",
+      "passed": true,
+      "evidence": "Authors@R"
+    },
+    {
+      "text": "Flags Description starting with 'This package'",
+      "passed": true,
+      "evidence": "This package"
+    },
+    {
+      "text": "Flags Depends should be Imports",
+      "passed": true,
+      "evidence": "Depends` \u2014 move packages to `Imports"
+    },
+    {
+      "text": "Flags RCurl/rjson as discouraged (httr2/curl/jsonlite)",
+      "passed": true,
+      "evidence": "RCurl"
+    },
+    {
+      "text": "Flags missing/invalid license (CRAN/OSI)",
+      "passed": true,
+      "evidence": "CRAN Reposi"
+    },
+    {
+      "text": "Flags missing URL / BugReports fields",
+      "passed": true,
+      "evidence": "BugReports"
+    }
+  ],
+  "passed_count": 6,
+  "total": 8
+}

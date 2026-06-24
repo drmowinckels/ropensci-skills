@@ -1,0 +1,56 @@
+{
+  "expectations": [
+    {
+      "text": "Recommends usethis to scaffold the package",
+      "passed": true,
+      "evidence": "usethis"
+    },
+    {
+      "text": "Recommends snake_case for function naming",
+      "passed": true,
+      "evidence": "snake_case"
+    },
+    {
+      "text": "Says use Imports rather than Depends",
+      "passed": true,
+      "evidence": "Imports:\n    httr2,\n    jsonlite,\n    cli\nSuggests:\n    testthat (>= 3.0.0),\n    httptest2,\n    knitr,\n    rmarkdown,\n    vcr\nEncoding: UTF-8\nRoxygen: list(mark"
+    },
+    {
+      "text": "Recommends modern HTTP/JSON deps (httr2/curl/jsonlite)",
+      "passed": true,
+      "evidence": "httr2"
+    },
+    {
+      "text": "States the ~75% test coverage expectation",
+      "passed": true,
+      "evidence": "Coverage must be at or above 75"
+    },
+    {
+      "text": "Specifies CI across release, oldrel and devel R",
+      "passed": true,
+      "evidence": "development, \"Active\" when ready). Add the rOpenSci peer-review badge after submission.\n3. Short goal description with a link to the vignette\n4. Installation in"
+    },
+    {
+      "text": "Mentions the rOpenSci repostatus README badge",
+      "passed": true,
+      "evidence": "repostatus"
+    },
+    {
+      "text": "Covers API-key security (env var / keyring / not printed)",
+      "passed": true,
+      "evidence": "environment variable"
+    },
+    {
+      "text": "Recommends at least one vignette",
+      "passed": true,
+      "evidence": "vignette"
+    },
+    {
+      "text": "Recommends roxygen2 for documentation",
+      "passed": true,
+      "evidence": "Roxygen"
+    }
+  ],
+  "passed_count": 10,
+  "total": 10
+}

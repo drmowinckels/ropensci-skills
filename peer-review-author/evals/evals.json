@@ -1,0 +1,17 @@
+{
+  "skill_name": "peer-review-author",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I've written an R package that scrapes and tidies data from government PDF reports so researchers can analyse them. I'd like to submit it to rOpenSci. Is it in scope, and what do I need to do before I submit?",
+      "expected_output": "Confirms data extraction/munging is in scope; mentions overlap policy (significant difference needed); pre-submission requirements: run pkgcheck/pkgcheck-action, README that lets editor assess without installing, CRAN/OSI license, code of conduct + contributing, CI multi-platform, coverage >=75%; author commitments (maintain >=2yr, submit before CRAN/paper, one package at a time); suggests pre-submission enquiry if unsure.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "How do I actually submit my package to rOpenSci software peer review? What goes into the submission and how does the review process work after that?",
+      "expected_output": "Open an issue in ropensci/software-review using the template (preserve HTML variable markers, repo URL, statement of need, category, confirm checks pass); @ropensci-review-bot runs pkgcheck; editor screens; two reviewers assigned with ~3-week window; iterative public feedback; approval via @ropensci-review-bot approve then transfer to ropensci org, docs site, promotion.",
+      "files": []
+    }
+  ]
+}

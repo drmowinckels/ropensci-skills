@@ -1,0 +1,811 @@
+{
+  "metadata": {
+    "skill_name": "rOpenSci skills (batch 1, iter 1)",
+    "skill_path": "/Users/athanasm/workspace/ropensci/ropensci-skills",
+    "executor_model": "claude-sonnet-4-6",
+    "timestamp": "2026-06-23T18:29:34.734754+00:00",
+    "evals_run": [
+      2,
+      3,
+      1,
+      0,
+      5,
+      4
+    ],
+    "runs_per_configuration": 1
+  },
+  "runs": [
+    {
+      "eval_id": 2,
+      "eval_name": "author-scope-readiness",
+      "skill": "ropensci-peer-review-author",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 7,
+        "failed": 0,
+        "total": 7,
+        "time_seconds": 57.8,
+        "tokens": 20361,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Addresses whether the package is in scope",
+          "passed": true,
+          "evidence": "in scope"
+        },
+        {
+          "text": "Mentions the overlap / significant-difference policy",
+          "passed": true,
+          "evidence": "significant difference"
+        },
+        {
+          "text": "Recommends running pkgcheck before submitting",
+          "passed": true,
+          "evidence": "pkgcheck"
+        },
+        {
+          "text": "Mentions the ~2-year maintenance commitment",
+          "passed": true,
+          "evidence": "2 year"
+        },
+        {
+          "text": "Says submit before CRAN release / software paper",
+          "passed": true,
+          "evidence": "before submitting: **does a similar package already exist?** If another package scrapes the same (or a closely related) class of government PDFs, you will need "
+        },
+        {
+          "text": "Notes README must let editor assess without installing",
+          "passed": true,
+          "evidence": "assess scope without"
+        },
+        {
+          "text": "Mentions a pre-submission enquiry option",
+          "passed": true,
+          "evidence": "pre-submission"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 2,
+      "eval_name": "author-scope-readiness",
+      "skill": "ropensci-peer-review-author",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.5714,
+        "passed": 4,
+        "failed": 3,
+        "total": 7,
+        "time_seconds": 239.0,
+        "tokens": 16338,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Addresses whether the package is in scope",
+          "passed": true,
+          "evidence": "in scope"
+        },
+        {
+          "text": "Mentions the overlap / significant-difference policy",
+          "passed": false,
+          "evidence": ""
+        },
+        {
+          "text": "Recommends running pkgcheck before submitting",
+          "passed": true,
+          "evidence": "pkgcheck"
+        },
+        {
+          "text": "Mentions the ~2-year maintenance commitment",
+          "passed": false,
+          "evidence": ""
+        },
+        {
+          "text": "Says submit before CRAN release / software paper",
+          "passed": true,
+          "evidence": "before opening a formal submission. The editors respond quickly and will tell you definitively.\n\n---\n\n## What to do before submitting\n\n### 1. Meet the minimum t"
+        },
+        {
+          "text": "Notes README must let editor assess without installing",
+          "passed": false,
+          "evidence": ""
+        },
+        {
+          "text": "Mentions a pre-submission enquiry option",
+          "passed": true,
+          "evidence": "pre-submission"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 3,
+      "eval_name": "author-submission-mechanics",
+      "skill": "ropensci-peer-review-author",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 7,
+        "failed": 0,
+        "total": 7,
+        "time_seconds": 49.1,
+        "tokens": 19884,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Says open an issue in ropensci/software-review",
+          "passed": true,
+          "evidence": "software-review"
+        },
+        {
+          "text": "Mentions the submission template",
+          "passed": true,
+          "evidence": "template"
+        },
+        {
+          "text": "Mentions @ropensci-review-bot / pkgcheck on submission",
+          "passed": true,
+          "evidence": "pkgcheck"
+        },
+        {
+          "text": "Says two reviewers are assigned",
+          "passed": true,
+          "evidence": "two reviewers"
+        },
+        {
+          "text": "Mentions the ~3-week review window",
+          "passed": true,
+          "evidence": "three week"
+        },
+        {
+          "text": "Mentions approval and transfer to the ropensci org",
+          "passed": true,
+          "evidence": "transfer"
+        },
+        {
+          "text": "Notes a statement of need is required",
+          "passed": true,
+          "evidence": "Statement of need"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 3,
+      "eval_name": "author-submission-mechanics",
+      "skill": "ropensci-peer-review-author",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.7143,
+        "passed": 5,
+        "failed": 2,
+        "total": 7,
+        "time_seconds": 233.0,
+        "tokens": 16006,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Says open an issue in ropensci/software-review",
+          "passed": true,
+          "evidence": "software-review"
+        },
+        {
+          "text": "Mentions the submission template",
+          "passed": true,
+          "evidence": "template"
+        },
+        {
+          "text": "Mentions @ropensci-review-bot / pkgcheck on submission",
+          "passed": true,
+          "evidence": "pkgcheck"
+        },
+        {
+          "text": "Says two reviewers are assigned",
+          "passed": true,
+          "evidence": "two reviewers"
+        },
+        {
+          "text": "Mentions the ~3-week review window",
+          "passed": false,
+          "evidence": ""
+        },
+        {
+          "text": "Mentions approval and transfer to the ropensci org",
+          "passed": true,
+          "evidence": "Transfer"
+        },
+        {
+          "text": "Notes a statement of need is required",
+          "passed": false,
+          "evidence": ""
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 1,
+      "eval_name": "pkgstd-audit-description",
+      "skill": "ropensci-package-standards",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 8,
+        "failed": 0,
+        "total": 8,
+        "time_seconds": 39.8,
+        "tokens": 20021,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Flags package name should be lowercase",
+          "passed": true,
+          "evidence": "lowercase"
+        },
+        {
+          "text": "Flags Title should drop 'in R' / be Title Case",
+          "passed": true,
+          "evidence": "Title Case"
+        },
+        {
+          "text": "Flags missing Authors@R / ORCID",
+          "passed": true,
+          "evidence": "Authors@R"
+        },
+        {
+          "text": "Flags Description starting with 'This package'",
+          "passed": true,
+          "evidence": "This package"
+        },
+        {
+          "text": "Flags Depends should be Imports",
+          "passed": true,
+          "evidence": "Move `Depends` to `Imports"
+        },
+        {
+          "text": "Flags RCurl/rjson as discouraged (httr2/curl/jsonlite)",
+          "passed": true,
+          "evidence": "RCurl"
+        },
+        {
+          "text": "Flags missing/invalid license (CRAN/OSI)",
+          "passed": true,
+          "evidence": "CRAN- or OSI"
+        },
+        {
+          "text": "Flags missing URL / BugReports fields",
+          "passed": true,
+          "evidence": "BugReports"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 1,
+      "eval_name": "pkgstd-audit-description",
+      "skill": "ropensci-package-standards",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.75,
+        "passed": 6,
+        "failed": 2,
+        "total": 8,
+        "time_seconds": 36.3,
+        "tokens": 16570,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Flags package name should be lowercase",
+          "passed": false,
+          "evidence": ""
+        },
+        {
+          "text": "Flags Title should drop 'in R' / be Title Case",
+          "passed": false,
+          "evidence": ""
+        },
+        {
+          "text": "Flags missing Authors@R / ORCID",
+          "passed": true,
+          "evidence": "Authors@R"
+        },
+        {
+          "text": "Flags Description starting with 'This package'",
+          "passed": true,
+          "evidence": "This package"
+        },
+        {
+          "text": "Flags Depends should be Imports",
+          "passed": true,
+          "evidence": "Depends` \u2014 move packages to `Imports"
+        },
+        {
+          "text": "Flags RCurl/rjson as discouraged (httr2/curl/jsonlite)",
+          "passed": true,
+          "evidence": "RCurl"
+        },
+        {
+          "text": "Flags missing/invalid license (CRAN/OSI)",
+          "passed": true,
+          "evidence": "CRAN Reposi"
+        },
+        {
+          "text": "Flags missing URL / BugReports fields",
+          "passed": true,
+          "evidence": "BugReports"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 0,
+      "eval_name": "pkgstd-new-package",
+      "skill": "ropensci-package-standards",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 10,
+        "failed": 0,
+        "total": 10,
+        "time_seconds": 102.6,
+        "tokens": 26464,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Recommends usethis to scaffold the package",
+          "passed": true,
+          "evidence": "usethis"
+        },
+        {
+          "text": "Recommends snake_case for function naming",
+          "passed": true,
+          "evidence": "snake_case"
+        },
+        {
+          "text": "Says use Imports rather than Depends",
+          "passed": true,
+          "evidence": "Imports:\n    httr2,\n    jsonlite,\n    cli\nSuggests:\n    testthat (>= 3.0.0),\n    httptest2,\n    knitr,\n    rmarkdown,\n    vcr\nEncoding: UTF-8\nRoxygen: list(mark"
+        },
+        {
+          "text": "Recommends modern HTTP/JSON deps (httr2/curl/jsonlite)",
+          "passed": true,
+          "evidence": "httr2"
+        },
+        {
+          "text": "States the ~75% test coverage expectation",
+          "passed": true,
+          "evidence": "Coverage must be at or above 75"
+        },
+        {
+          "text": "Specifies CI across release, oldrel and devel R",
+          "passed": true,
+          "evidence": "development, \"Active\" when ready). Add the rOpenSci peer-review badge after submission.\n3. Short goal description with a link to the vignette\n4. Installation in"
+        },
+        {
+          "text": "Mentions the rOpenSci repostatus README badge",
+          "passed": true,
+          "evidence": "repostatus"
+        },
+        {
+          "text": "Covers API-key security (env var / keyring / not printed)",
+          "passed": true,
+          "evidence": "environment variable"
+        },
+        {
+          "text": "Recommends at least one vignette",
+          "passed": true,
+          "evidence": "vignette"
+        },
+        {
+          "text": "Recommends roxygen2 for documentation",
+          "passed": true,
+          "evidence": "Roxygen"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 0,
+      "eval_name": "pkgstd-new-package",
+      "skill": "ropensci-package-standards",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.8,
+        "passed": 8,
+        "failed": 2,
+        "total": 10,
+        "time_seconds": 254.8,
+        "tokens": 18374,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Recommends usethis to scaffold the package",
+          "passed": true,
+          "evidence": "usethis"
+        },
+        {
+          "text": "Recommends snake_case for function naming",
+          "passed": true,
+          "evidence": "snake_case"
+        },
+        {
+          "text": "Says use Imports rather than Depends",
+          "passed": false,
+          "evidence": ""
+        },
+        {
+          "text": "Recommends modern HTTP/JSON deps (httr2/curl/jsonlite)",
+          "passed": true,
+          "evidence": "httr2"
+        },
+        {
+          "text": "States the ~75% test coverage expectation",
+          "passed": true,
+          "evidence": "75%"
+        },
+        {
+          "text": "Specifies CI across release, oldrel and devel R",
+          "passed": true,
+          "evidence": "development version number (`0.0.0.9000`) until first release"
+        },
+        {
+          "text": "Mentions the rOpenSci repostatus README badge",
+          "passed": false,
+          "evidence": ""
+        },
+        {
+          "text": "Covers API-key security (env var / keyring / not printed)",
+          "passed": true,
+          "evidence": "keyring"
+        },
+        {
+          "text": "Recommends at least one vignette",
+          "passed": true,
+          "evidence": "vignette"
+        },
+        {
+          "text": "Recommends roxygen2 for documentation",
+          "passed": true,
+          "evidence": "Roxygen"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 5,
+      "eval_name": "review-editor-checks",
+      "skill": "ropensci-package-review",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.875,
+        "passed": 7,
+        "failed": 1,
+        "total": 8,
+        "time_seconds": 35.9,
+        "tokens": 18620,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Notes docs should be assessable without installing",
+          "passed": true,
+          "evidence": "assessment of functionality and scope without installing the package. In particular,\n  - [ ] Is the case for the package well made?\n  - [ ] Is the reference ind"
+        },
+        {
+          "text": "Mentions fit / overlap check",
+          "passed": true,
+          "evidence": "overlap"
+        },
+        {
+          "text": "Mentions CRAN/OSI license check",
+          "passed": true,
+          "evidence": "CRAN or OSI"
+        },
+        {
+          "text": "Mentions checking issue/PR tracker health",
+          "passed": true,
+          "evidence": "issue. The goal is to confirm the package is ready for review \u2014 not to review it yourself.\n\n---\n\n## Editor Checks Template\n\nPost this on the submission issue (f"
+        },
+        {
+          "text": "Mentions assigning exactly two reviewers",
+          "passed": false,
+          "evidence": ""
+        },
+        {
+          "text": "Mentions the bot runs pkgcheck",
+          "passed": true,
+          "evidence": "pkgcheck"
+        },
+        {
+          "text": "Mentions the 21-day / 3-week reviewer default",
+          "passed": true,
+          "evidence": "21 day"
+        },
+        {
+          "text": "Mentions check srr for statistical packages",
+          "passed": true,
+          "evidence": "srr"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 5,
+      "eval_name": "review-editor-checks",
+      "skill": "ropensci-package-review",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.75,
+        "passed": 6,
+        "failed": 2,
+        "total": 8,
+        "time_seconds": 23.4,
+        "tokens": 15579,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Notes docs should be assessable without installing",
+          "passed": true,
+          "evidence": "assess:\n\n- Package structure and metadata (DESCRIPTION fields, LICENSE, README).\n- Documentation completeness (all exported functions documented, examples prese"
+        },
+        {
+          "text": "Mentions fit / overlap check",
+          "passed": true,
+          "evidence": "scope criteria"
+        },
+        {
+          "text": "Mentions CRAN/OSI license check",
+          "passed": false,
+          "evidence": ""
+        },
+        {
+          "text": "Mentions checking issue/PR tracker health",
+          "passed": true,
+          "evidence": "Issue\n\nThe author opens a GitHub issue in the `ropensci/software-review` repo. Confirm:\n\n- The submission template is complete (all sections filled in).\n- The p"
+        },
+        {
+          "text": "Mentions assigning exactly two reviewers",
+          "passed": true,
+          "evidence": "two reviewers"
+        },
+        {
+          "text": "Mentions the bot runs pkgcheck",
+          "passed": true,
+          "evidence": "pkgcheck"
+        },
+        {
+          "text": "Mentions the 21-day / 3-week reviewer default",
+          "passed": true,
+          "evidence": "3 week"
+        },
+        {
+          "text": "Mentions check srr for statistical packages",
+          "passed": false,
+          "evidence": ""
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 4,
+      "eval_name": "review-reviewer-checklist",
+      "skill": "ropensci-package-review",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 8,
+        "failed": 0,
+        "total": 8,
+        "time_seconds": 62.7,
+        "tokens": 19739,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Mentions checking for conflict of interest",
+          "passed": true,
+          "evidence": "conflict"
+        },
+        {
+          "text": "States the 3-week review timeframe",
+          "passed": true,
+          "evidence": "three week"
+        },
+        {
+          "text": "Includes Documentation checklist (statement of need)",
+          "passed": true,
+          "evidence": "statement of need"
+        },
+        {
+          "text": "Includes Functionality checklist (packaging guidelines/tests)",
+          "passed": true,
+          "evidence": "functionality"
+        },
+        {
+          "text": "Recommends hands-on checks (devtools::check/test, install)",
+          "passed": true,
+          "evidence": "install"
+        },
+        {
+          "text": "Mentions respectful / non-adversarial conduct (CoC)",
+          "passed": true,
+          "evidence": "non-adversarial"
+        },
+        {
+          "text": "Mentions the reviewer 'rev' role / being credited",
+          "passed": true,
+          "evidence": "acknowledg"
+        },
+        {
+          "text": "Mentions the pkgreviewr helper",
+          "passed": true,
+          "evidence": "pkgreviewr"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 4,
+      "eval_name": "review-reviewer-checklist",
+      "skill": "ropensci-package-review",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.5,
+        "passed": 4,
+        "failed": 4,
+        "total": 8,
+        "time_seconds": 229.5,
+        "tokens": 16718,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Mentions checking for conflict of interest",
+          "passed": false,
+          "evidence": ""
+        },
+        {
+          "text": "States the 3-week review timeframe",
+          "passed": true,
+          "evidence": "3 week"
+        },
+        {
+          "text": "Includes Documentation checklist (statement of need)",
+          "passed": false,
+          "evidence": ""
+        },
+        {
+          "text": "Includes Functionality checklist (packaging guidelines/tests)",
+          "passed": true,
+          "evidence": "Functionality"
+        },
+        {
+          "text": "Recommends hands-on checks (devtools::check/test, install)",
+          "passed": true,
+          "evidence": "Install"
+        },
+        {
+          "text": "Mentions respectful / non-adversarial conduct (CoC)",
+          "passed": false,
+          "evidence": ""
+        },
+        {
+          "text": "Mentions the reviewer 'rev' role / being credited",
+          "passed": true,
+          "evidence": "Acknowledg"
+        },
+        {
+          "text": "Mentions the pkgreviewr helper",
+          "passed": false,
+          "evidence": ""
+        }
+      ],
+      "notes": []
+    }
+  ],
+  "run_summary": {
+    "with_skill": {
+      "pass_rate": {
+        "mean": 0.9792,
+        "stddev": 0.051,
+        "min": 0.875,
+        "max": 1.0
+      },
+      "time_seconds": {
+        "mean": 57.9833,
+        "stddev": 24.1253,
+        "min": 35.9,
+        "max": 102.6
+      },
+      "tokens": {
+        "mean": 20848.1667,
+        "stddev": 2813.6707,
+        "min": 18620,
+        "max": 26464
+      }
+    },
+    "without_skill": {
+      "pass_rate": {
+        "mean": 0.681,
+        "stddev": 0.118,
+        "min": 0.5,
+        "max": 0.8
+      },
+      "time_seconds": {
+        "mean": 169.3333,
+        "stddev": 108.4674,
+        "min": 23.4,
+        "max": 254.8
+      },
+      "tokens": {
+        "mean": 16597.5,
+        "stddev": 961.8507,
+        "min": 15579,
+        "max": 18374
+      }
+    },
+    "delta": {
+      "pass_rate": "+0.30",
+      "time_seconds": "-111.4",
+      "tokens": "+4251"
+    }
+  },
+  "notes": [
+    "Assertion 'Addresses whether the package is in scope' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Recommends running pkgcheck before submitting' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Says submit before CRAN release / software paper' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Mentions a pre-submission enquiry option' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Says open an issue in ropensci/software-review' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Mentions the submission template' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Mentions @ropensci-review-bot / pkgcheck on submission' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Says two reviewers are assigned' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Mentions approval and transfer to the ropensci org' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Flags missing Authors@R / ORCID' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Flags Description starting with 'This package'' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Flags Depends should be Imports' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Flags RCurl/rjson as discouraged (httr2/curl/jsonlite)' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Flags missing/invalid license (CRAN/OSI)' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Flags missing URL / BugReports fields' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Recommends usethis to scaffold the package' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Recommends snake_case for function naming' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Recommends modern HTTP/JSON deps (httr2/curl/jsonlite)' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'States the ~75% test coverage expectation' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Specifies CI across release, oldrel and devel R' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Covers API-key security (env var / keyring / not printed)' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Recommends at least one vignette' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Recommends roxygen2 for documentation' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Notes docs should be assessable without installing' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Mentions fit / overlap check' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Mentions checking issue/PR tracker health' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Mentions the bot runs pkgcheck' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Mentions the 21-day / 3-week reviewer default' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'States the 3-week review timeframe' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Includes Functionality checklist (packaging guidelines/tests)' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Recommends hands-on checks (devtools::check/test, install)' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Mentions the reviewer 'rev' role / being credited' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Skill lifts pass rate by +30% on average (with=98%, without=68%); biggest single-eval gap is 'review-reviewer-checklist' (+50%).",
+    "32 assertion(s) pass in BOTH configs - to the extent these match generic packaging vocabulary the benchmark understates the skill's rOpenSci-specific value.",
+    "Skill adds 4251 tokens vs baseline on average and runs 111s faster; baseline time/tokens vary run-to-run because without the skill the model explores/searches, while with it the model answers from grounded references."
+  ]
+}

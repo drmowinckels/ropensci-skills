@@ -1,0 +1,339 @@
+{
+  "metadata": {
+    "skill_name": "ropensci-package-standards (iter 3)",
+    "skill_path": "/Users/athanasm/workspace/ropensci/ropensci-skills",
+    "executor_model": "claude-sonnet-4-6",
+    "timestamp": "2026-06-23T19:25:29.915609+00:00",
+    "evals_run": [
+      1,
+      0
+    ],
+    "runs_per_configuration": 1
+  },
+  "runs": [
+    {
+      "eval_id": 1,
+      "eval_name": "pkgstd-audit-description",
+      "skill": "ropensci-package-standards",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 8,
+        "failed": 0,
+        "total": 8,
+        "time_seconds": 52.8,
+        "tokens": 18968,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Flags package name should be lowercase",
+          "passed": true,
+          "evidence": "lowercase"
+        },
+        {
+          "text": "Flags Title should drop 'in R' / be Title Case",
+          "passed": true,
+          "evidence": "Title Case"
+        },
+        {
+          "text": "Flags missing Authors@R / ORCID",
+          "passed": true,
+          "evidence": "Authors@R"
+        },
+        {
+          "text": "Flags Description starting with 'This package'",
+          "passed": true,
+          "evidence": "This package"
+        },
+        {
+          "text": "Flags Depends should be Imports",
+          "passed": true,
+          "evidence": "Depends` must be replaced with `Imports"
+        },
+        {
+          "text": "Flags RCurl/rjson as discouraged (httr2/curl/jsonlite)",
+          "passed": true,
+          "evidence": "RCurl"
+        },
+        {
+          "text": "Flags missing/invalid license (CRAN/OSI)",
+          "passed": true,
+          "evidence": "CRAN- or OSI"
+        },
+        {
+          "text": "Flags missing URL / BugReports fields",
+          "passed": true,
+          "evidence": "BugReports"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 1,
+      "eval_name": "pkgstd-audit-description",
+      "skill": "ropensci-package-standards",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.75,
+        "passed": 6,
+        "failed": 2,
+        "total": 8,
+        "time_seconds": 38.9,
+        "tokens": 16524,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Flags package name should be lowercase",
+          "passed": false,
+          "evidence": ""
+        },
+        {
+          "text": "Flags Title should drop 'in R' / be Title Case",
+          "passed": true,
+          "evidence": "title case"
+        },
+        {
+          "text": "Flags missing Authors@R / ORCID",
+          "passed": true,
+          "evidence": "Authors@R"
+        },
+        {
+          "text": "Flags Description starting with 'This package'",
+          "passed": true,
+          "evidence": "This package"
+        },
+        {
+          "text": "Flags Depends should be Imports",
+          "passed": true,
+          "evidence": "Depends` should be `Imports"
+        },
+        {
+          "text": "Flags RCurl/rjson as discouraged (httr2/curl/jsonlite)",
+          "passed": true,
+          "evidence": "RCurl"
+        },
+        {
+          "text": "Flags missing/invalid license (CRAN/OSI)",
+          "passed": false,
+          "evidence": ""
+        },
+        {
+          "text": "Flags missing URL / BugReports fields",
+          "passed": true,
+          "evidence": "BugReports"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 0,
+      "eval_name": "pkgstd-new-package",
+      "skill": "ropensci-package-standards",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 10,
+        "failed": 0,
+        "total": 10,
+        "time_seconds": 99.0,
+        "tokens": 26454,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Recommends usethis to scaffold the package",
+          "passed": true,
+          "evidence": "usethis"
+        },
+        {
+          "text": "Recommends snake_case for function naming",
+          "passed": true,
+          "evidence": "snake_case"
+        },
+        {
+          "text": "Says use Imports rather than Depends",
+          "passed": true,
+          "evidence": "Imports:\n    httr2,\n    jsonlite\nSuggests:\n    httptest2,\n    knitr,\n    rmarkdown,\n    testthat (>= 3.0.0),\n    vcr (>= 1.2.2)\n```\n\nKey rules applied here:\n\n- "
+        },
+        {
+          "text": "Recommends modern HTTP/JSON deps (httr2/curl/jsonlite)",
+          "passed": true,
+          "evidence": "httr2"
+        },
+        {
+          "text": "States the ~75% test coverage expectation",
+          "passed": true,
+          "evidence": "75%"
+        },
+        {
+          "text": "Specifies CI across release, oldrel and devel R",
+          "passed": true,
+          "evidence": "release, oldrel, and devel R:\nusethis::use_github_action(\"check-standard\")\n\n# Test coverage reported to Codecov:\nusethis::use_github_action(\"test-coverage\")\n```"
+        },
+        {
+          "text": "Mentions the rOpenSci repostatus README badge",
+          "passed": true,
+          "evidence": "repostatus"
+        },
+        {
+          "text": "Covers API-key security (env var / keyring / not printed)",
+          "passed": true,
+          "evidence": "environment variable"
+        },
+        {
+          "text": "Recommends at least one vignette",
+          "passed": true,
+          "evidence": "vignette"
+        },
+        {
+          "text": "Recommends roxygen2 for documentation",
+          "passed": true,
+          "evidence": "Roxygen"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 0,
+      "eval_name": "pkgstd-new-package",
+      "skill": "ropensci-package-standards",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 10,
+        "failed": 0,
+        "total": 10,
+        "time_seconds": 234.2,
+        "tokens": 24418,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Recommends usethis to scaffold the package",
+          "passed": true,
+          "evidence": "usethis"
+        },
+        {
+          "text": "Recommends snake_case for function naming",
+          "passed": true,
+          "evidence": "snake_case"
+        },
+        {
+          "text": "Says use Imports rather than Depends",
+          "passed": true,
+          "evidence": "Imports** (required at runtime):\n- `httr2` \u2014 preferred over `httr` for new packages; handles requests, auth, rate limiting, retries cleanly\n- `cli` \u2014 for all us"
+        },
+        {
+          "text": "Recommends modern HTTP/JSON deps (httr2/curl/jsonlite)",
+          "passed": true,
+          "evidence": "httr2"
+        },
+        {
+          "text": "States the ~75% test coverage expectation",
+          "passed": true,
+          "evidence": "coverage to be above 75"
+        },
+        {
+          "text": "Specifies CI across release, oldrel and devel R",
+          "passed": true,
+          "evidence": "development (`pak::pak(\"yourorg/finchdata\")`)\n- Authentication setup\n- A minimal working example\n- Link to pkgdown site\n\n```r\nusethis::use_badge(\"repostatus\", \""
+        },
+        {
+          "text": "Mentions the rOpenSci repostatus README badge",
+          "passed": true,
+          "evidence": "repostatus"
+        },
+        {
+          "text": "Covers API-key security (env var / keyring / not printed)",
+          "passed": true,
+          "evidence": "environment variable"
+        },
+        {
+          "text": "Recommends at least one vignette",
+          "passed": true,
+          "evidence": "vignette"
+        },
+        {
+          "text": "Recommends roxygen2 for documentation",
+          "passed": true,
+          "evidence": "Roxygen"
+        }
+      ],
+      "notes": []
+    }
+  ],
+  "run_summary": {
+    "with_skill": {
+      "pass_rate": {
+        "mean": 1.0,
+        "stddev": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "time_seconds": {
+        "mean": 75.9,
+        "stddev": 32.6683,
+        "min": 52.8,
+        "max": 99.0
+      },
+      "tokens": {
+        "mean": 22711.0,
+        "stddev": 5293.4014,
+        "min": 18968,
+        "max": 26454
+      }
+    },
+    "without_skill": {
+      "pass_rate": {
+        "mean": 0.875,
+        "stddev": 0.1768,
+        "min": 0.75,
+        "max": 1.0
+      },
+      "time_seconds": {
+        "mean": 136.55,
+        "stddev": 138.098,
+        "min": 38.9,
+        "max": 234.2
+      },
+      "tokens": {
+        "mean": 20471.0,
+        "stddev": 5581.9009,
+        "min": 16524,
+        "max": 24418
+      }
+    },
+    "delta": {
+      "pass_rate": "+0.12",
+      "time_seconds": "-60.7",
+      "tokens": "+2240"
+    }
+  },
+  "notes": [
+    "Assertion 'Flags Title should drop 'in R' / be Title Case' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Flags missing Authors@R / ORCID' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Flags Description starting with 'This package'' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Flags Depends should be Imports' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Flags RCurl/rjson as discouraged (httr2/curl/jsonlite)' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Flags missing URL / BugReports fields' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Recommends usethis to scaffold the package' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Recommends snake_case for function naming' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Says use Imports rather than Depends' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Recommends modern HTTP/JSON deps (httr2/curl/jsonlite)' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'States the ~75% test coverage expectation' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Specifies CI across release, oldrel and devel R' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Mentions the rOpenSci repostatus README badge' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Covers API-key security (env var / keyring / not printed)' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Recommends at least one vignette' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Assertion 'Recommends roxygen2 for documentation' passes in BOTH configs - does not isolate rOpenSci-specific value.",
+    "Skill lifts pass rate by +12% on average (with=100%, without=88%); biggest single-eval gap is 'pkgstd-audit-description' (+25%).",
+    "16 assertion(s) pass in BOTH configs - to the extent these match generic packaging vocabulary the benchmark understates the skill's rOpenSci-specific value.",
+    "Skill adds 2240 tokens vs baseline on average and runs 61s faster; baseline time/tokens vary run-to-run because without the skill the model explores/searches, while with it the model answers from grounded references."
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "expectations": [
+    {
+      "text": "Notes docs should be assessable without installing",
+      "passed": true,
+      "evidence": "assess:\n\n- Package structure and metadata (DESCRIPTION fields, LICENSE, README).\n- Documentation completeness (all exported functions documented, examples prese"
+    },
+    {
+      "text": "Mentions fit / overlap check",
+      "passed": true,
+      "evidence": "scope criteria"
+    },
+    {
+      "text": "Mentions CRAN/OSI license check",
+      "passed": false,
+      "evidence": ""
+    },
+    {
+      "text": "Mentions checking issue/PR tracker health",
+      "passed": true,
+      "evidence": "Issue\n\nThe author opens a GitHub issue in the `ropensci/software-review` repo. Confirm:\n\n- The submission template is complete (all sections filled in).\n- The p"
+    },
+    {
+      "text": "Mentions assigning exactly two reviewers",
+      "passed": true,
+      "evidence": "two reviewers"
+    },
+    {
+      "text": "Mentions the bot runs pkgcheck",
+      "passed": true,
+      "evidence": "pkgcheck"
+    },
+    {
+      "text": "Mentions the 21-day / 3-week reviewer default",
+      "passed": true,
+      "evidence": "3 week"
+    },
+    {
+      "text": "Mentions check srr for statistical packages",
+      "passed": false,
+      "evidence": ""
+    }
+  ],
+  "passed_count": 6,
+  "total": 8
+}

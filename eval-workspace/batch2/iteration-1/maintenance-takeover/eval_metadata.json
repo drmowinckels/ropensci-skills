@@ -1,0 +1,14 @@
+{
+  "eval_id": 6,
+  "eval_name": "Maintenance: maintainer takeover",
+  "skill": "package-maintenance",
+  "prompt": "I'm taking over maintenance of an rOpenSci package from someone who is stepping down. What do I need to update and be aware of?",
+  "assertions": [
+    "Set new maintainer aut+cre, former to aut only",
+    "Update maintainer name everywhere (CITATION/CONTRIBUTING/man)",
+    "Old maintainer must email CRAN for an active package",
+    "Notes no permission needed if archived/orphaned",
+    "Mentions rOpenSci newsletter / Call For Contributors",
+    "Mentions keeping admin access / Slack channel"
+  ]
+}

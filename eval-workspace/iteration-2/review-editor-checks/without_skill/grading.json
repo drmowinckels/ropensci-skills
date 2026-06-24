@@ -1,0 +1,46 @@
+{
+  "expectations": [
+    {
+      "text": "Notes docs should be assessable without installing",
+      "passed": true,
+      "evidence": "Assess whether these values indicate the package is too small (trivial) or too large/complex for a reasonable review scope.\n\n---\n\n## 3. Assess Scope and Fit\n\nCh"
+    },
+    {
+      "text": "Mentions fit / overlap check",
+      "passed": true,
+      "evidence": "Scope and Fit"
+    },
+    {
+      "text": "Mentions CRAN/OSI license check",
+      "passed": true,
+      "evidence": "CRAN or OSI"
+    },
+    {
+      "text": "Mentions checking issue/PR tracker health",
+      "passed": true,
+      "evidence": "issue. Verify this label is present and that the submission issue template was properly filled out by the author.\n\n---\n\n## 2. Run or Review Automatic Package Ch"
+    },
+    {
+      "text": "Mentions assigning exactly two reviewers",
+      "passed": false,
+      "evidence": ""
+    },
+    {
+      "text": "Mentions the bot runs pkgcheck",
+      "passed": false,
+      "evidence": ""
+    },
+    {
+      "text": "Mentions the 21-day / 3-week reviewer default",
+      "passed": false,
+      "evidence": ""
+    },
+    {
+      "text": "Mentions check srr for statistical packages",
+      "passed": true,
+      "evidence": "srr"
+    }
+  ],
+  "passed_count": 5,
+  "total": 8
+}

@@ -1,0 +1,56 @@
+{
+  "expectations": [
+    {
+      "text": "Recommends usethis to scaffold the package",
+      "passed": true,
+      "evidence": "usethis"
+    },
+    {
+      "text": "Recommends snake_case for function naming",
+      "passed": true,
+      "evidence": "snake_case"
+    },
+    {
+      "text": "Says use Imports rather than Depends",
+      "passed": false,
+      "evidence": ""
+    },
+    {
+      "text": "Recommends modern HTTP/JSON deps (httr2/curl/jsonlite)",
+      "passed": true,
+      "evidence": "httr2"
+    },
+    {
+      "text": "States the ~75% test coverage expectation",
+      "passed": true,
+      "evidence": "75%"
+    },
+    {
+      "text": "Specifies CI across release, oldrel and devel R",
+      "passed": true,
+      "evidence": "development version number (`0.0.0.9000`) until first release"
+    },
+    {
+      "text": "Mentions the rOpenSci repostatus README badge",
+      "passed": false,
+      "evidence": ""
+    },
+    {
+      "text": "Covers API-key security (env var / keyring / not printed)",
+      "passed": true,
+      "evidence": "keyring"
+    },
+    {
+      "text": "Recommends at least one vignette",
+      "passed": true,
+      "evidence": "vignette"
+    },
+    {
+      "text": "Recommends roxygen2 for documentation",
+      "passed": true,
+      "evidence": "Roxygen"
+    }
+  ],
+  "passed_count": 8,
+  "total": 10
+}

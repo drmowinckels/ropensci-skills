@@ -1,0 +1,17 @@
+{
+  "skill_name": "package-standards",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I'm starting a new R package called finchdata that downloads bird observation data from an online API. I want it to meet rOpenSci's standards from the very beginning. Walk me through how to set it up: structure, files, naming, dependencies, docs, tests, and CI. What conventions do I need to follow?",
+      "expected_output": "rOpenSci-specific setup guidance: usethis scaffolding, lowercase/snake_case naming, Imports not Depends, modern deps (httr2/jsonlite), roxygen2 with @param/@return/runnable examples, README with CI+coverage+repostatus badges, at least one HTML vignette, testthat with >=75% coverage, tidyverse style (cli not print), GitHub Actions on release+oldrel+devel, NEWS.md, default branch main, CRAN/OSI license, API key in env var (never printed).",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Here's the DESCRIPTION of my package 'WeatherTools'. Can you review it against rOpenSci packaging standards and tell me what to fix?\n\n```\nPackage: WeatherTools\nType: Package\nTitle: Tools for Weather Data in R\nVersion: 0.1\nAuthor: Jane Doe\nMaintainer: Jane Doe <jane@example.com>\nDescription: This package provides functions to get weather data.\nDepends: dplyr, RCurl, rjson\nLicense: What license is it?\n```",
+      "expected_output": "Flags: name not lowercase (WeatherTools), Title has 'in R' and should be Title Case without it, no Authors@R/ORCID, Description starts with 'This package' and is too thin, Depends should be Imports, RCurl->httr2/curl and rjson->jsonlite discouraged deps, missing/invalid License (needs CRAN/OSI), missing URL/BugReports. Separates required vs recommended.",
+      "files": []
+    }
+  ]
+}

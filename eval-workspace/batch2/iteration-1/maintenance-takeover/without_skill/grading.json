@@ -1,0 +1,36 @@
+{
+  "expectations": [
+    {
+      "text": "Set new maintainer aut+cre, former to aut only",
+      "passed": true,
+      "evidence": "role = c(\"aut\", \"cre"
+    },
+    {
+      "text": "Update maintainer name everywhere (CITATION/CONTRIBUTING/man)",
+      "passed": true,
+      "evidence": "CONTRIBUTING"
+    },
+    {
+      "text": "Old maintainer must email CRAN for an active package",
+      "passed": true,
+      "evidence": "CRAN sends policy email"
+    },
+    {
+      "text": "Notes no permission needed if archived/orphaned",
+      "passed": true,
+      "evidence": "archived"
+    },
+    {
+      "text": "Mentions rOpenSci newsletter / Call For Contributors",
+      "passed": false,
+      "evidence": ""
+    },
+    {
+      "text": "Mentions keeping admin access / Slack channel",
+      "passed": true,
+      "evidence": "package-maintenance"
+    }
+  ],
+  "passed_count": 5,
+  "total": 6
+}
