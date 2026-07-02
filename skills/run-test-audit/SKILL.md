@@ -59,9 +59,11 @@ see `package-review`; for the standards see `package-standards`.
 
 ## Report
 
-Write `Review_AI_test_audit.qmd` from `references/report-template.md`. Fill the
-transparency header first (**Prompt**, the operative **Skill** text reproduced
-verbatim, the **Method** with tool versions and an explicit "no files
+Write `Review_AI_test_audit.qmd` from the **shared report template** at
+`../run-package-review/references/report-template.md` (one template across all
+`run-*` passes, for consistency; if the user supplies their own, use theirs).
+Fill the transparency header first (**Prompt**, the operative **Skill** text
+reproduced verbatim, the **Method** with tool versions and an explicit "no files
 modified"), then the findings in four buckets, each finding carrying a severity
 and cited evidence (`file.R:line`, command output, or a reproduced probe):
 
@@ -79,7 +81,8 @@ Then a **Verified healthy (no action)** list, a **Coverage snapshot** table, a
 
 ## Related skills
 
-- The umbrella review runner and the other passes (complexity, dependencies,
-  performance) → `run-package-review`.
+- The umbrella review runner → `run-package-review`.
+- The sibling review passes, runnable one at a time → `run-complexity`,
+  `run-dependency-review`, `run-performance-review`.
 - The reviewer checklist & "what to evaluate" → `package-review`.
 - The standards being checked → `package-standards`; statistical → `stats-standards`.

@@ -67,10 +67,12 @@ skill adds the _run it and report it_ layer on top.
 
 ## The review passes
 
-Each is a self-contained report. Start from the checklist item in
+Each pass is available as its own focused `run-*` skill and produces one
+self-contained report. Run them **one at a time** (invoke the dedicated skill),
+or orchestrate several from here. Start from the checklist item in
 `package-review`; the notes below say what "running it" concretely means.
 
-- **Test-suite audit** — the implementation is the contract, the tests are the
+- **Test-suite audit** → `run-test-audit`. The implementation is the contract, the tests are the
   artifact under review. Enumerate public surface vs. tested set; run the suite
   more than once (shuffled/re-seeded where cheap); check coverage _depth_ (happy
   path, `NULL`/`NA`/empty/boundary, every error branch, each meaningful
@@ -80,22 +82,26 @@ Each is a self-contained report. Start from the checklist item in
   Report buckets: **A** coverage gaps, **B** weak/meaningless tests, **C**
   instability/flakiness, **D** consistency/maintainability — plus a verified-
   healthy list, a coverage snapshot, a not-run list, and a fix priority.
-- **Code-complexity analysis** — measure, don't eyeball. Cyclomatic complexity
-  per function (e.g. `cyclocomp`), LOC, nesting depth, `if`/`for` counts; a
-  static call-graph over `R/` to find duplication and call-site counts. Confirm
-  behavioural findings with runtime probes. Recommend simplifications that keep
-  the **user-facing surface unchanged**; flag genuine API/UX issues separately.
-- **Dependency review** — could base R or a lighter dependency replace a heavy
-  or transitive one? Tier the recommendations (clear wins → worth-doing →
-  defer), note what removal buys nothing, and respect the maintainer's stated
-  preferences. Weigh maintenance/security posture, not just count.
-- **Performance review** — profile the real hot paths on representative inputs;
-  distinguish measured wins from speculative ones; keep behaviour identical.
+- **Code-complexity analysis** → `run-complexity`. Measure, don't eyeball.
+  Cyclomatic complexity per function (e.g. `cyclocomp`), LOC, nesting depth,
+  `if`/`for` counts; a static call-graph over `R/` to find duplication and
+  call-site counts. Confirm behavioural findings with runtime probes. Recommend
+  simplifications that keep the **user-facing surface unchanged**; flag genuine
+  API/UX issues separately.
+- **Dependency review** → `run-dependency-review`. Could base R or a lighter
+  dependency replace a heavy or transitive one? Tier the recommendations (clear
+  wins → worth-doing → defer), note what removal buys nothing, and respect the
+  maintainer's stated preferences. Weigh whether a cut actually **prunes the
+  install tree**, not just the dependency count.
+- **Performance review** → `run-performance-review`. Trace the hot path, measure
+  on representative inputs (or recorded fixtures), extrapolate to large queries,
+  and flag risks (memory-bound pulls, silent truncation). Distinguish measured
+  wins from speculative ones; keep behaviour identical.
 
 Other `package-review` items (documentation, API design, real-world testing,
-UI/UX) can be run the same way and reported with the same template. Each pass
-is deliberately its own skill-sized unit: a future contributor can split any of
-these into a dedicated focused skill without changing the report format.
+UI/UX) can be run the same way and reported with the same shared template. New
+passes should follow the `run-<thing>` convention and reuse
+`references/report-template.md` so every report stays consistent.
 
 ## Statistical packages
 
@@ -105,6 +111,8 @@ the same transparent format.
 
 ## Related skills
 
+- The focused per-dimension passes → `run-test-audit`, `run-complexity`,
+  `run-dependency-review`, `run-performance-review`.
 - The reviewer checklist & "what to evaluate" this skill acts on → `package-review`.
 - The standards being checked → `package-standards`; statistical → `stats-standards`.
 - The author's side (preparing a package for these checks) → `peer-review-author`.

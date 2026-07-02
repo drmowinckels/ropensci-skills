@@ -1,4 +1,12 @@
-# Review report template
+# Review report template (shared)
+
+**This is the shared, canonical report template for every `run-*` review pass**
+(`run-test-audit`, `run-complexity`, `run-dependency-review`,
+`run-performance-review`, …). One template across all passes is deliberate: it
+keeps the reports consistent, so a reader — human or AI — can scan any of them
+the same way. Each pass fills the same skeleton and swaps in its own **Findings**
+buckets (listed below). If a user supplies their own report template, use theirs
+instead; otherwise this is the default.
 
 Every review pass produces one self-contained Quarto report, `Review_AI_<pass>.qmd`
 (e.g. `Review_AI_test_audit.qmd`). The structure below is what makes an
@@ -65,9 +73,12 @@ buckets by pass:
 - Complexity → **Measured profile** (table: fn · cc · LOC · verdict) then one
   **Hotspot N** subsection per offender, each with a minimal reproducing
   snippet and a concrete refactor that keeps the user-facing surface unchanged
-- Dependencies → **Tier 1** clear wins · **Tier 2** worth doing · **Tier 3**
-  defer · **Keep** (removal buys nothing)
-- Performance → measured hot paths, each with before/after evidence
+- Dependencies → a **Summary** table (dep · uses · prunable? · base-R
+  replacement · verdict) then **Tier 1** clear wins · **Tier 2** worth doing ·
+  **Tier 3** defer · **Keep** (removal buys nothing)
+- Performance → **Architecture** of the hot path · **Measured anchors** (from
+  fixtures/profiling) · **Extrapolated scenarios** · **Risks** — each with
+  before/after or measured evidence
 
 Prefer tables for profiles/inventories; prefer fenced code for reproducing
 snippets. Never assert a defect you have not shown.>

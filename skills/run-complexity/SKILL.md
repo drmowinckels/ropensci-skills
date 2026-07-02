@@ -62,10 +62,12 @@ context see `package-review`; for the standards (code style, dependencies) see
 
 ## Report
 
-Write `Review_AI_complexity.qmd` from `references/report-template.md`. Fill the
-transparency header first (**Prompt**; the **Skill**/method used — say so plainly
-if a pass was done by direct measurement rather than a named skill; the
-**Method** with tool versions and an explicit "no files modified"), then:
+Write `Review_AI_complexity.qmd` from the **shared report template** at
+`../run-package-review/references/report-template.md` (one template across all
+`run-*` passes, for consistency; if the user supplies their own, use theirs).
+Fill the transparency header first (**Prompt**; the **Skill**/method used — say
+so plainly if a pass was done by direct measurement rather than a named skill;
+the **Method** with tool versions and an explicit "no files modified"), then:
 
 - **Measured profile** — a table (function · where · cc · LOC · `if` blocks ·
   verdict) and the cc distribution. Lead with the takeaway (e.g. "per-function
@@ -85,7 +87,8 @@ Every claim cites evidence: a `file.R:line`, a metric, or a reproduced probe.
 
 ## Related skills
 
-- The umbrella review runner and the other passes (tests, dependencies,
-  performance) → `run-package-review`.
+- The umbrella review runner → `run-package-review`.
+- The sibling review passes, runnable one at a time → `run-test-audit`,
+  `run-dependency-review`, `run-performance-review`.
 - The reviewer checklist & "what to evaluate" → `package-review`.
 - The standards being checked → `package-standards`; statistical → `stats-standards`.
